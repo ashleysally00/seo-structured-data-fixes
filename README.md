@@ -50,8 +50,6 @@ Here’s what the tool reported:
 }
 </script>
 ````
-This block was leftover from Squarespace commerce — but my site was no longer selling directly.
-All purchases now happen through Amazon or Barnes & Noble links, not on my site.
 
 ### The fix
 
