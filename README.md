@@ -1,4 +1,4 @@
-# seo-structured-data-fixes
+# SEO Structured Data Fixes
 
 ## Rich Test Results Snapshot
 
