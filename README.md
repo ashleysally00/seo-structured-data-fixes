@@ -20,7 +20,7 @@ Because of that, Squarespace automatically injected **LocalBusiness** schema int
 
 Later, I stopped selling through Squarespace and deleted the commerce pages.  
 Now my site only links to outside retailers (Amazon and Barnes & Noble) for my books.  
-But the LocalBusiness schema code stayed in the background — even though I was no longer running a business on the site.  
+But the LocalBusiness schema code stayed in the background, even though I was no longer running a business on the site.  
 
 When I ran the Rich Results Test, it still tried to validate my site as a Local Business and threw errors.
 
