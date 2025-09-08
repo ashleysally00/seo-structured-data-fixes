@@ -2,6 +2,10 @@
 
 This repo documents my process of fixing **SEO** and **structured data** issues on my Squarespace site. I'm using **SEMrush** and **Google's Rich Results Test** to identify problems, apply fixes, and track improvements.
 
+## Table of Contents
+- [Next Actions Checklist](#next-actions-checklist)
+- [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀️
+
 ## SEMrush Integration
 
 The SEMrush report highlighted:
@@ -142,3 +146,11 @@ That legacy schema is what triggered the Rich Results errors above. Since I no l
 * **Schema should match reality**: Since I no longer sell directly through my site, LocalBusiness is incorrect. WebSite schema is the right fit.
 * **Tools help uncover hidden issues**: SEMrush and Google's Rich Results Test revealed problems I couldn't see just by browsing the site.
 * **SEO is iterative**: Each fix leads to the next test. Visibility builds through steady corrections, not one-time changes.
+
+### Notes to Self / Next Steps✨
+- Start with writing **unique meta descriptions** for Home, Books, About, Contact, Wholesale  
+- After Search Console verifies domain, check **Index Coverage** to confirm all 5 main pages are indexed  
+- Use **Rich Results Test** again to confirm schema cleanup (WebSite vs. LocalBusiness)  
+- Consider adding 150–300 words of intro text to Books and About pages for SEO  
+- Re-run SEMrush once quota resets to confirm errors are resolved  
+
