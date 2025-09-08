@@ -129,7 +129,7 @@ That legacy schema is what triggered the Rich Results errors above. Since I no l
 
 ## Next Actions Checklist
 
-* Fix broken Pinterest backlinks (301 redirect or remove)
+- ~~Fix broken Pinterest backlinks (301 redirect or remove)~~ 
 * Remove LocalBusiness schema from Squarespace template
 * Add WebSite schema only
 * Re-run Google Rich Results Test after changes
