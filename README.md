@@ -4,7 +4,7 @@ This repo documents my process of fixing **SEO** and **structured data** issues 
 
 ## Table of Contents
 - [Next Actions Checklist](#next-actions-checklist) ✅
-- [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀️
+- [Notes to Self / Next Steps](#notes-to-self--next-steps-) 😎☀️
 - [SEMrush Integration](#semrush-integration)
 - [Fix: Redirects](#fix-redirects)
 - [Fixing Duplicate Title Tags](#fixing-duplicate-title-tags)
