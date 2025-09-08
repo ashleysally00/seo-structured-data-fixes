@@ -242,7 +242,8 @@ That legacy schema is what triggered the Rich Results errors above. Since I no l
 5. **SEO is iterative**: Each fix leads to the next test. Visibility builds through steady corrections, not one-time changes.
 
 ### Notes to Self / Next Steps✨
-- Start with writing **unique meta descriptions** for Home, Books, About, Contact, Wholesale  
+- ~~Fix broken Pinterest backlinks (301 redirect or remove)~~  
+- ~~Start with writing unique meta descriptions for Home, Books, About, Contact, Wholesale~~  
 - After Search Console verifies domain, check **Index Coverage** to confirm all 5 main pages are indexed  
 - Use **Rich Results Test** again to confirm schema cleanup (WebSite vs. LocalBusiness)  
 - ~~Consider adding 150–300 words of intro text to Books and About pages for SEO~~  
