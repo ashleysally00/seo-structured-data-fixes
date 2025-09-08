@@ -1,45 +1,46 @@
-# SEO Structured Data Fixes
+# Website SEO & Schema Debugging
 
-## Rich Test Results Snapshot
+This repo documents my process of fixing **SEO** and **structured data** issues on my Squarespace site. I'm using **SEMrush** and **Google's Rich Results Test** to identify problems, apply fixes, and track improvements.
 
-I was working on my website and got this error when testing structured data.  
-When this happens, a good thing to do is go to the **Rich Results Test**.  
+## SEMrush Integration
 
-The Rich Results Test is a site made by **Google**. It’s free to use and checks whether your structured data (schema markup) is valid and eligible for rich results in search.  
-👉 [Try it here](https://search.google.com/test/rich-results)  
+The SEMrush report highlighted:
 
-This repo includes snapshots from that tool to help document test outcomes, including:  
-- **rich-test-results.png** – example of the error message  
-- **local-business.png** – example of testing local business schema
+* **Broken links**: Many from old Pinterest pins pointing to pages I deleted when restructuring my site.
+* **Visibility**: 0% — the site is being rebuilt for search ranking.
+* **Backlinks**: 285 currently, though some point to broken pages.
 
-## Error 1: LocalBusiness Schema Injected by Squarespace
+### Fix: Redirects
 
-### What happened
-At one point I sold animations directly through my Squarespace site.  
-Because of that, Squarespace automatically injected **LocalBusiness** schema into the site template.  
+I created **301 redirects** in Squarespace under **Developer Tools → URL Mappings** so old URLs now point to my live `/books` page.
 
-Later, I stopped selling through Squarespace and deleted the commerce pages.  
-Now my site only links to outside retailers (Amazon and Barnes & Noble) for my books.  
-But the LocalBusiness schema code stayed in the background, even though I was no longer running a business on the site.  
+```
+/about -> /books 301
+/any-day -> /books 301
+/ashley-lynn-rice -> /books 301
+/bio -> /books 301
+/birthday-cards -> /books 301
+/birthdaycards -> /books 301
+/baby -> /books 301
+```
 
-When I ran the Rich Results Test, it still tried to validate my site as a Local Business and threw errors.
+This preserves traffic from Pinterest and passes SEO value from old backlinks.
 
-Here’s what the tool reported:
-<p align="center">
-  <img src="https://github.com/ashleysally00/seo-structured-data-fixes/raw/main/rich-test-results.png" width="65%">
-</p>
+## SEO Structured Data Fixes (In Progress)
 
+### Rich Test Results Snapshot
 
-- Missing field **"name"**  
-- Missing field **"telephone"** (optional)  
-- Missing field **"priceRange"** (optional)  
-- Missing field **"address"** (optional)  
+Running Google's Rich Results Test flagged errors caused by Squarespace's **LocalBusiness schema**.
 
----
+**Errors reported:**
+* Missing field `"name"`
+* Missing field `"telephone"` (optional)
+* Missing field `"priceRange"` (optional)
+* Missing field `"address"` (optional)
 
-### Problem code (Squarespace-injected LocalBusiness schema)
-```html
-<script type="application/ld+json">
+**Problem code (Squarespace injected):**
+
+```json
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
@@ -48,21 +49,52 @@ Here’s what the tool reported:
   "telephone": "",
   "priceRange": ""
 }
-</script>
-````
+```
 
-### The fix
+### Next Step
 
-I removed the LocalBusiness schema completely.
-Instead, I kept only the schema that actually applies to my site, like WebSite.
+Replace the incorrect LocalBusiness schema with WebSite schema:
 
-````
-<script type="application/ld+json">
+```json
 {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "My Website",
-  "url": "https://www.mywebsite.com"
+  "name": "Ashley Rice - Author & Illustrator",
+  "url": "https://www.ashleyrice.net"
 }
-</script>
-````
+```
+
+⚠️ **Note**: This change has not been applied yet. The LocalBusiness schema is still active and continues to trigger errors. This section remains open until it's resolved.
+
+## Snapshot References
+
+This repo includes screenshots of test outcomes for documentation:
+
+* `rich-test-results.png` – error message example
+* `local-business.png` – failed LocalBusiness validation
+* `semrush-broken-links.png` – SEMrush report
+
+## Store / Commerce Pages and Schema
+
+At one point I experimented with selling animations directly through Squarespace's built-in commerce features. Even after deleting those store pages, Squarespace left behind **LocalBusiness schema** in the template.
+
+That legacy schema is what triggered the Rich Results errors above. Since I no longer sell directly through my site (all book sales go to Amazon and Barnes & Noble), the fix is to:
+
+* Remove the leftover LocalBusiness schema, and
+* Keep only schema relevant to my site, such as **WebSite**.
+
+## Next Actions Checklist
+
+- [ ] Fix broken Pinterest backlinks (301 redirect or remove)
+- [ ] Remove LocalBusiness schema from Squarespace template
+- [ ] Add WebSite schema only
+- [ ] Re-run Google Rich Results Test after changes
+- [ ] Monitor SEMrush for visibility and keyword improvements
+
+## Lessons Learned
+
+* **Redirects matter**: Old backlinks from Pinterest and other sites can still drive traffic. Redirecting them preserves value instead of losing it to 403/404 errors.
+* **Structured data lingers**: Even if you delete pages in Squarespace, injected schema (like LocalBusiness) may remain in the template and cause validation errors.
+* **Schema should match reality**: Since I no longer sell directly through my site, LocalBusiness is incorrect. WebSite schema is the right fit.
+* **Tools help uncover hidden issues**: SEMrush and Google's Rich Results Test revealed problems I couldn't see just by browsing the site.
+* **SEO is iterative**: Each fix leads to the next test. Visibility builds through steady corrections, not one-time changes.
