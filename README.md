@@ -3,7 +3,7 @@
 This repo documents my process of fixing **SEO** and **structured data** issues on my Squarespace site. I'm using **SEMrush** and **Google's Rich Results Test** to identify problems, apply fixes, and track improvements.
 
 ## Table of Contents
-- [Next Actions Checklist](#next-actions-checklist)
+- [Next Actions Checklist](#next-actions-checklist) ✅
 - [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀️
 
 ## SEMrush Integration
