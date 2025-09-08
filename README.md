@@ -4,16 +4,18 @@ This repo documents my process of fixing **SEO** and **structured data** issues 
 
 ## Table of Contents
 - [Next Actions Checklist](#next-actions-checklist) ✅
-- [Notes to Self / Next Steps](#notes-to-self--next-steps-) 😎☀️
+- [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀️
 - [SEMrush Integration](#semrush-integration)
 - [Fix: Redirects](#fix-redirects)
 - [Fixing Duplicate Title Tags](#fixing-duplicate-title-tags)
 - [Fixing Meta Descriptions & Removing Blog SEO](#fixing-meta-descriptions--removing-blog-seo)
+- [Addressing Low Word Count (On-Page SEO)](#addressing-low-word-count-on-page-seo)
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
 - [SEO Structured Data Fixes (In Progress)](#seo-structured-data-fixes-in-progress)
 - [Snapshot References](#snapshot-references)
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
+
 
 ## SEMrush Integration
 
@@ -109,6 +111,35 @@ Squarespace was stacking the Blog Collection description on top of my page-level
 - "Blog—" in title previews comes from site-wide title format settings.  
 - The built-in character counter is unreliable — always confirm externally.  
 - One page = one clean, unique description under 160 characters.
+
+  ## Addressing Low Word Count (On-Page SEO)
+
+The next issue flagged by SEMrush was a **“low word count” warning.**  
+This showed up because the Books page only had about ~40 words of text.  
+
+This wasn’t a technical SEO error — it was an **on-page content issue**.  
+The page needed more written content so Google could understand what it was about and rank it properly.
+
+**Error flagged by SEMrush:**  
+- *“11 pages have a low word count (Warning)”*  
+- The Books page (`/books`) was included.  
+
+![semrush-thin-content](semrush-thin-content.png)  
+
+**Why this mattered:**  
+- Google considers pages with very short text to be “thin content.”  
+- Thin pages are less likely to rank because search engines can’t determine the topic or relevance.  
+
+**Fix applied:**  
+- Expanded the Books intro to ~150 words in Penelope’s voice.  
+- Added natural keywords like *books for girls, poems, quotes, drawings, confidence, friendship*.  
+- On mobile, reordered the page so the intro text appears above the illustration, ensuring Google and readers see meaningful content first.  
+
+**Result:**  
+- Books page now meets SEO best practice (150–300 words of intro text).  
+- Still feels authentic to the brand and voice, while improving chances of ranking.  
+- Other pages (About, Wholesale, Contact) are still flagged for low word count and will be addressed next.  
+
 
 ## Verifying Domain in Google Search Console
 
@@ -210,10 +241,10 @@ That legacy schema is what triggered the Rich Results errors above. Since I no l
 
 5. **SEO is iterative**: Each fix leads to the next test. Visibility builds through steady corrections, not one-time changes.
 
-## Notes to Self / Next Steps ✨
+### Notes to Self / Next Steps✨
+- Start with writing **unique meta descriptions** for Home, Books, About, Contact, Wholesale  
+- After Search Console verifies domain, check **Index Coverage** to confirm all 5 main pages are indexed  
+- Use **Rich Results Test** again to confirm schema cleanup (WebSite vs. LocalBusiness)  
+- ~~Consider adding 150–300 words of intro text to Books and About pages for SEO~~  
+- Re-run SEMrush once quota resets to confirm errors are resolved  
 
-- ~~Start with writing unique meta descriptions for Home, Books, About, Contact, Wholesale~~
-- After Search Console verifies domain, check Index Coverage to confirm all 5 main pages are indexed
-- Use Rich Results Test again to confirm schema cleanup (WebSite vs. LocalBusiness)
-- Consider adding 150–300 words of intro text to Books and About pages for SEO
-- Re-run SEMrush once quota resets to confirm errors are resolved
