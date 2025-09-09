@@ -4,7 +4,7 @@ This repo documents my process of fixing **SEO** and **structured data** issues 
 
 ## Table of Contents
 - [Next Actions Checklist](#next-actions-checklist) ✅
-- [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀️
+- [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀
 - [SEMrush Integration](#semrush-integration)
 - [Fix: Redirects](#fix-redirects)
 - [Fixing Duplicate Title Tags](#fixing-duplicate-title-tags)
@@ -13,6 +13,7 @@ This repo documents my process of fixing **SEO** and **structured data** issues 
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
 - [SEO Structured Data Fixes (In Progress)](#seo-structured-data-fixes-in-progress)
 - [Snapshot References](#snapshot-references)
+- [Books Quiz](#books-quiz) ✨📚
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
 
@@ -213,6 +214,16 @@ This repo includes screenshots of test outcomes for documentation:
 - `rich-test-results.png` – error message example
 - `local-business.png` – failed LocalBusiness validation
 - `semrush-broken-links.png` – SEMrush report
+
+## Books Quiz
+
+As part of improving on-page engagement, I built an interactive quiz:  
+**“Which of Penelope’s Books Fits You Best?”**  
+
+It’s a simple multiple-choice quiz that links readers to the book that matches their answers, providing both fun interaction and additional internal linking for SEO.  
+
+👉 [Open the quiz](books-quiz.html)
+
 
 ## Store / Commerce Pages and Schema
 
