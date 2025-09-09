@@ -118,7 +118,7 @@ Squarespace was stacking the Blog Collection description on top of my page-level
 - The built-in character counter is unreliable — always confirm externally.  
 - One page = one clean, unique description under 160 characters.
 
-  ## Addressing Low Word Count (On-Page SEO)
+## Addressing Low Word Count (On-Page SEO)
 
 The next issue flagged by SEMrush was a **“low word count” warning.**  
 This showed up because the Books page only had about ~40 words of text.  
@@ -130,7 +130,6 @@ The page needed more written content so Google could understand what it was abou
 - *“11 pages have a low word count (Warning)”*  
 - The Books page (`/books`) was included.  
 
-![semrush-thin-content](semrush-thin-content.png)  
 
 **Why this mattered:**  
 - Google considers pages with very short text to be “thin content.”  
