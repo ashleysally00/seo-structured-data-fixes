@@ -2,6 +2,11 @@
 
 This repo documents my process of fixing **SEO** and **structured data** issues on my Squarespace site. I'm using **SEMrush** and **Google's Rich Results Test** to identify problems, apply fixes, and track improvements.
 
+## 📚 Books Quiz  
+Find out which Penelope book fits you best — just take the quiz!  
+👉 [Take the quiz!](https://ashleysally00.github.io/seo-structured-data-fixes/books_quiz.html)
+
+
 ## Table of Contents
 - [Next Actions Checklist](#next-actions-checklist) ✅
 - [Notes to Self / Next Steps](#notes-to-self--next-steps) 😎☀
