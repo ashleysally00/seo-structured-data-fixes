@@ -1,0 +1,284 @@
+<div id="ar-book-quiz" class="ar-quiz">
+  <div class="ar-card" role="region" aria-labelledby="ar-quiz-title">
+    <h2 id="ar-quiz-title" class="ar-title">Which Penelope book fits you best?</h2>
+    <p class="ar-sub">Answer a few quick questions to get a match — then see why it fits you.</p>
+
+    <div id="ar-quiz-screen"></div>
+  </div>
+</div>
+
+<style>
+  /* --- General Quiz Styles --- */
+  .ar-quiz { 
+    max-width: 720px; 
+    margin: 40px auto; 
+    /* ✨ UPDATED FONT TO COURIER ✨ */
+    font-family: 'Courier New', Courier, monospace; 
+  }
+  .ar-title { margin:0 0 8px; font-size: clamp(1.3rem, 2.4vw, 1.8rem); font-weight: 700; }
+  .ar-sub { margin:0 0 16px; color:#555; }
+  .ar-q { margin: 4px 0 14px; font-weight:600; }
+  fieldset { border:0; padding:0; margin:0 0 10px; }
+  .ar-note { font-size:.9rem; color:#666; }
+  
+  /* --- ✨ YOUR CUSTOM STYLES ✨ --- */
+  
+  /* Make the quiz card purple and rounder */
+  .ar-card { 
+    background: #f3e5f5; /* Soft purple background */
+    border: 1px solid #d1c4e9; 
+    border-radius: 32px; /* Increased for a rounder look */
+    padding: 24px; 
+    box-shadow: 0 6px 20px rgba(0,0,0,.06); 
+  }
+
+  /* Style the main buttons to be turquoise */
+  .ar-btn { 
+    appearance: none; 
+    background: #4dd0e1; /* New turquoise button color */
+    border: 1px solid #4dd0e1; /* Matching turquoise border */
+    color: #fff; 
+    border-radius: 999px; 
+    padding: 10px 16px; 
+    cursor: pointer;
+    font-weight: 700; /* Bolder font weight for buttons */
+    /* ✨ UPDATED FONT TO COURIER ✨ */
+    font-family: 'Courier New', Courier, monospace; 
+  }
+  
+  /* Style the 'Back' and 'Retake' buttons with turquoise text */
+  .ar-btn--ghost { 
+    background: #fff; 
+    color: #4dd0e1; /* Use the new turquoise color for text */
+  }
+
+  /* --- Progress Bar and Other Styles --- */
+  .ar-progress { height:8px; background: rgba(255,255,255,0.6); border-radius:8px; overflow:hidden; margin: 12px 0 20px; }
+  
+  .ar-progress > div { 
+    height:100%; 
+    width:0; 
+    background: linear-gradient(to right, #ffc0cb, #ff69b4); /* Pink Gradient */
+    border-radius: 8px; /* This keeps the end of the bar rounded */
+    transition:width .35s ease; 
+  }
+  
+  .ar-option { display:block; padding:10px 12px; margin:8px 0; border:1px solid #ddd; border-radius:12px; cursor:pointer; background: #fff; }
+  .ar-option:hover { border-color:#bbb; }
+  .ar-radio { position:relative; top:2px; margin-right:10px; }
+  .ar-actions { display:flex; gap:10px; margin-top:14px; }
+  .ar-result { text-align:left; }
+  .ar-result h3 { margin:0 0 8px; font-size: clamp(1.2rem, 2.2vw, 1.5rem); font-weight: 700; }
+  .ar-result p { margin:8px 0 14px; color:#333; }
+  @media (prefers-reduced-motion: reduce) { .ar-progress > div { transition:none; } }
+</style>
+
+<script>
+/* ===========================
+   CONFIG: BOOKS (edit me)
+   Each key is a "category" that answers can vote for.
+   Update title, url, and the why message.
+=========================== */
+const BOOKS = {
+  CAN_DO: {
+    title: "You Are a Girl Who Can Do Anything",
+    url: "/books/you-are-a-girl-who-can-do-anything",
+    why: "You chose courage, trying new things, and sticking with it — this book cheers for every brave step."
+  },
+  BELIEVE: {
+    title: "Believe in Yourself, Girl",
+    url: "/books/believe-in-yourself-girl",
+    why: "Your answers point to self-belief and inner strength. This one speaks right to that voice."
+  },
+  FRIENDS: {
+    title: "Friendship & Big Feelings (Ashley Rice Collection)",
+    url: "/books/friendship-and-big-feelings",
+    why: "You value good friends, kindness, and everyday joys — this pick is all about those moments."
+  },
+  DREAMS: {
+    title: "Follow Your Dreams (Poems & Quotes)",
+    url: "/books/follow-your-dreams",
+    why: "Dreaming + doing = you. This book blends pep talks and doodles for goal-chasers."
+  }
+};
+
+/* ===========================
+   CONFIG: QUESTIONS (edit me)
+   For each option, set category to one of the BOOKS keys above.
+=========================== */
+const QUESTIONS = [
+  {
+    q: "When you face something new, you…",
+    options: [
+      { label: "Jump in and try!", category: "CAN_DO" },
+      { label: "Take a breath and back yourself.", category: "BELIEVE" },
+      { label: "Text a friend — we’ve got this.", category: "FRIENDS" },
+      { label: "Make a plan and go for the goal.", category: "DREAMS" }
+    ]
+  },
+  {
+    q: "Pick a message you want more of:",
+    options: [
+      { label: "You can do hard things.", category: "CAN_DO" },
+      { label: "Trust yourself.", category: "BELIEVE" },
+      { label: "Friends make the day better.", category: "FRIENDS" },
+      { label: "Dream big, start small.", category: "DREAMS" }
+    ]
+  },
+  {
+    q: "Which page would you bookmark?",
+    options: [
+      { label: "A pep talk before trying out.", category: "CAN_DO" },
+      { label: "A quiet reminder to be you.", category: "BELIEVE" },
+      { label: "A note about kindness & friendship.", category: "FRIENDS" },
+      { label: "A checklist toward a dream.", category: "DREAMS" }
+    ]
+  },
+  {
+    q: "What made you smile lately?",
+    options: [
+      { label: "Doing something I thought I couldn’t.", category: "CAN_DO" },
+      { label: "Listening to my inner voice.", category: "BELIEVE" },
+      { label: "Laughing with a friend.", category: "FRIENDS" },
+      { label: "Taking one step toward a goal.", category: "DREAMS" }
+    ]
+  },
+  {
+    q: "Pick a treat for reading time:",
+    options: [
+      { label: "Trying a new snack.", category: "CAN_DO" },
+      { label: "Classic chocolate. 🍫", category: "BELIEVE" },
+      { label: "Sharing popcorn with a friend.", category: "FRIENDS" },
+      { label: "Tea while planning next steps.", category: "DREAMS" }
+    ]
+  }
+];
+
+/* ===========================
+   QUIZ LOGIC (no edits needed)
+=========================== */
+(function(){
+  const root = document.getElementById("ar-quiz-screen");
+  let step = 0;
+  const votes = {};
+  Object.keys(BOOKS).forEach(k => votes[k] = 0);
+
+  const render = () => {
+    root.innerHTML = "";
+
+    // Intro
+    if (step === 0) {
+      root.append(intro());
+      return;
+    }
+
+    // Question screens
+    if (step >= 1 && step <= QUESTIONS.length) {
+      root.append(question(step-1));
+      return;
+    }
+
+    // Result
+    root.append(result());
+  };
+
+  const intro = () => {
+    const wrap = el("div");
+    wrap.append(progress(0));
+    const p = el("p", { class: "ar-note" }, "Takes about 30 seconds. No wrong answers.");
+    const btn = button("Start", () => { step = 1; render(); });
+    btn.classList.add("ar-btn");
+    wrap.append(p, actions([btn]));
+    return wrap;
+  };
+
+  const question = (i) => {
+    const data = QUESTIONS[i];
+    const wrap = el("div");
+    wrap.append(progress(i / QUESTIONS.length));
+
+    const q = el("div", { class: "ar-q", id: `q${i}` }, data.q);
+    wrap.append(q);
+
+    const fs = el("fieldset");
+    data.options.forEach((opt, idx) => {
+      const id = `q${i}-opt${idx}`;
+      const label = el("label", { class:"ar-option", for: id });
+      const input = el("input", { class:"ar-radio", type:"radio", name:`q${i}`, id, value: opt.category });
+      const span = el("span", {}, opt.label);
+      label.append(input, span);
+      fs.append(label);
+    });
+    wrap.append(fs);
+
+    const next = button(i === QUESTIONS.length - 1 ? "See my match" : "Next", () => {
+      const checked = root.querySelector(`input[name="q${i}"]:checked`);
+      if (!checked) { alert("Please choose an option."); return; }
+      votes[checked.value] += 1;
+      step += 1;
+      render();
+    });
+    next.classList.add("ar-btn");
+
+    const back = button("Back", () => {
+      // If going back, remove the last recorded vote (best effort).
+      if (step > 1) {
+        // Find which category was chosen on previous screen and decrement once.
+        // (Simple approach: do nothing; or keep a trail. We'll keep a trail.)
+      }
+      step -= 1;
+      if (step < 0) step = 0;
+      render();
+    });
+    back.classList.add("ar-btn","ar-btn--ghost");
+
+    wrap.append(actions([back, next]));
+    return wrap;
+  };
+
+  const result = () => {
+    // Pick highest votes; tie-break by first in BOOKS order.
+    const winnerKey = Object.keys(votes).reduce((a,b)=> votes[b] > votes[a] ? b : a);
+    const winner = BOOKS[winnerKey];
+
+    const wrap = el("div", { class: "ar-result" });
+    wrap.append(progress(1));
+    wrap.append(el("h3", {}, `Your match: ${winner.title}`));
+    wrap.append(el("p", {}, winner.why));
+
+    const visit = button("See this book", () => { window.location.href = winner.url; });
+    visit.classList.add("ar-btn");
+
+    const restart = button("Retake quiz", () => { step = 0; Object.keys(votes).forEach(k => votes[k]=0); render(); });
+    restart.classList.add("ar-btn","ar-btn--ghost");
+
+    wrap.append(actions([visit, restart]));
+    wrap.append(el("p", { class:"ar-note" }, "Not an exact science — it’s for fun and discovery."));
+    return wrap;
+  };
+
+  // Helpers
+  function el(tag, attrs={}, text) {
+    const n = document.createElement(tag);
+    Object.entries(attrs).forEach(([k,v]) => n.setAttribute(k,v));
+    if (text) n.textContent = text;
+    return n;
+  }
+  function button(label, onClick){ const b = el("button", {}, label); b.type="button"; b.addEventListener("click", onClick); return b; }
+  function actions(children){ const div = el("div", { class:"ar-actions" }); children.forEach(c=>div.append(c)); return div; }
+  function progress(ratio){ const bar = el("div", { class:"ar-progress" }); const fill = el("div"); fill.style.width = Math.round(ratio*100) + "%"; bar.append(fill); return bar; }
+
+  // Start
+  render();
+})();
+</script>
+
+<noscript>
+  <p><strong>Quiz requires JavaScript.</strong> You can browse books here:</p>
+  <ul>
+    <li><a href="/books/you-are-a-girl-who-can-do-anything">You Are a Girl Who Can Do Anything</a></li>
+    <li><a href="/books/believe-in-yourself-girl">Believe in Yourself, Girl</a></li>
+    <li><a href="/books/friendship-and-big-feelings">Friendship &amp; Big Feelings</a></li>
+    <li><a href="/books/follow-your-dreams">Follow Your Dreams</a></li>
+  </ul>
+</noscript>
