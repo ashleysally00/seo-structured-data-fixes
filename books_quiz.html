@@ -1,84 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Which Penelope Book Fits You Best?</title>
+  <meta name="description" content="Answer a few quick questions to discover which Ashley Rice (Penelope) book matches you best." />
+  <style>
+    .ar-quiz { max-width: 720px; margin: 40px auto; font-family: 'Courier New', Courier, monospace; padding: 0 16px; }
+    .ar-title { margin:0 0 8px; font-size: clamp(1.3rem, 2.4vw, 1.8rem); font-weight: 700; }
+    .ar-sub { margin:0 0 16px; color:#555; }
+    .ar-q { margin: 4px 0 14px; font-weight:600; }
+    fieldset { border:0; padding:0; margin:0 0 10px; }
+    .ar-note { font-size:.9rem; color:#666; }
+
+    .ar-card { background: #f3e5f5; border: 1px solid #d1c4e9; border-radius: 32px; padding: 24px; box-shadow: 0 6px 20px rgba(0,0,0,.06); }
+    .ar-btn { appearance: none; background: #4dd0e1; border: 1px solid #4dd0e1; color: #fff; border-radius: 999px; padding: 10px 16px; cursor: pointer; font-weight: 700; font-family: 'Courier New', Courier, monospace; }
+    .ar-btn--ghost { background: #fff; color: #4dd0e1; }
+
+    .ar-progress { height:8px; background: rgba(255,255,255,0.6); border-radius:8px; overflow:hidden; margin: 12px 0 20px; }
+    .ar-progress > div { height:100%; width:0; background: linear-gradient(to right, #ffc0cb, #ff69b4); border-radius: 8px; transition:width .35s ease; }
+
+    .ar-option { display:block; padding:10px 12px; margin:8px 0; border:1px solid #ddd; border-radius:12px; cursor:pointer; background: #fff; }
+    .ar-option:hover { border-color:#bbb; }
+    .ar-radio { position:relative; top:2px; margin-right:10px; }
+    .ar-actions { display:flex; gap:10px; margin-top:14px; flex-wrap: wrap; }
+    .ar-result { text-align:left; }
+    .ar-result h3 { margin:0 0 8px; font-size: clamp(1.2rem, 2.2vw, 1.5rem); font-weight: 700; }
+    .ar-result p { margin:8px 0 14px; color:#333; }
+    @media (prefers-reduced-motion: reduce) { .ar-progress > div { transition:none; } }
+  </style>
+</head>
+<body>
+
 <div id="ar-book-quiz" class="ar-quiz">
   <div class="ar-card" role="region" aria-labelledby="ar-quiz-title">
     <h2 id="ar-quiz-title" class="ar-title">Which Penelope book fits you best?</h2>
     <p class="ar-sub">Answer a few quick questions to get a match — then see why it fits you.</p>
-
     <div id="ar-quiz-screen"></div>
   </div>
 </div>
 
-<style>
-  /* --- General Quiz Styles --- */
-  .ar-quiz { 
-    max-width: 720px; 
-    margin: 40px auto; 
-    /* ✨ UPDATED FONT TO COURIER ✨ */
-    font-family: 'Courier New', Courier, monospace; 
-  }
-  .ar-title { margin:0 0 8px; font-size: clamp(1.3rem, 2.4vw, 1.8rem); font-weight: 700; }
-  .ar-sub { margin:0 0 16px; color:#555; }
-  .ar-q { margin: 4px 0 14px; font-weight:600; }
-  fieldset { border:0; padding:0; margin:0 0 10px; }
-  .ar-note { font-size:.9rem; color:#666; }
-  
-  /* --- ✨ YOUR CUSTOM STYLES ✨ --- */
-  
-  /* Make the quiz card purple and rounder */
-  .ar-card { 
-    background: #f3e5f5; /* Soft purple background */
-    border: 1px solid #d1c4e9; 
-    border-radius: 32px; /* Increased for a rounder look */
-    padding: 24px; 
-    box-shadow: 0 6px 20px rgba(0,0,0,.06); 
-  }
-
-  /* Style the main buttons to be turquoise */
-  .ar-btn { 
-    appearance: none; 
-    background: #4dd0e1; /* New turquoise button color */
-    border: 1px solid #4dd0e1; /* Matching turquoise border */
-    color: #fff; 
-    border-radius: 999px; 
-    padding: 10px 16px; 
-    cursor: pointer;
-    font-weight: 700; /* Bolder font weight for buttons */
-    /* ✨ UPDATED FONT TO COURIER ✨ */
-    font-family: 'Courier New', Courier, monospace; 
-  }
-  
-  /* Style the 'Back' and 'Retake' buttons with turquoise text */
-  .ar-btn--ghost { 
-    background: #fff; 
-    color: #4dd0e1; /* Use the new turquoise color for text */
-  }
-
-  /* --- Progress Bar and Other Styles --- */
-  .ar-progress { height:8px; background: rgba(255,255,255,0.6); border-radius:8px; overflow:hidden; margin: 12px 0 20px; }
-  
-  .ar-progress > div { 
-    height:100%; 
-    width:0; 
-    background: linear-gradient(to right, #ffc0cb, #ff69b4); /* Pink Gradient */
-    border-radius: 8px; /* This keeps the end of the bar rounded */
-    transition:width .35s ease; 
-  }
-  
-  .ar-option { display:block; padding:10px 12px; margin:8px 0; border:1px solid #ddd; border-radius:12px; cursor:pointer; background: #fff; }
-  .ar-option:hover { border-color:#bbb; }
-  .ar-radio { position:relative; top:2px; margin-right:10px; }
-  .ar-actions { display:flex; gap:10px; margin-top:14px; }
-  .ar-result { text-align:left; }
-  .ar-result h3 { margin:0 0 8px; font-size: clamp(1.2rem, 2.2vw, 1.5rem); font-weight: 700; }
-  .ar-result p { margin:8px 0 14px; color:#333; }
-  @media (prefers-reduced-motion: reduce) { .ar-progress > div { transition:none; } }
-</style>
-
 <script>
-/* ===========================
-   CONFIG: BOOKS (edit me)
-   Each key is a "category" that answers can vote for.
-   Update title, url, and the why message.
-=========================== */
 const BOOKS = {
   CAN_DO: {
     title: "You Are a Girl Who Can Do Anything",
@@ -112,20 +74,14 @@ const BOOKS = {
   }
 };
 
-
-
-/* ===========================
-   CONFIG: QUESTIONS (edit me)
-   For each option, set category to one of the BOOKS keys above.
-=========================== */
 const QUESTIONS = [
   {
     q: "When you face something new, you…",
     options: [
       { label: "Jump in and try!", category: "CAN_DO" },
       { label: "Take a breath and back yourself.", category: "BELIEVE" },
-      { label: "Text a friend — we’ve got this.", category: "FRIENDS" },
-      { label: "Make a plan and go for the goal.", category: "DREAMS" }
+      { label: "Text a friend — we’ve got this.", category: "GIRLS_RULE" },
+      { label: "Make a plan and go for the goal.", category: "TOTALLY_ROCKS" }
     ]
   },
   {
@@ -133,8 +89,8 @@ const QUESTIONS = [
     options: [
       { label: "You can do hard things.", category: "CAN_DO" },
       { label: "Trust yourself.", category: "BELIEVE" },
-      { label: "Friends make the day better.", category: "FRIENDS" },
-      { label: "Dream big, start small.", category: "DREAMS" }
+      { label: "Friends make the day better.", category: "GIRLS_RULE" },
+      { label: "Dream big, start small.", category: "TOTALLY_ROCKS" }
     ]
   },
   {
@@ -142,8 +98,8 @@ const QUESTIONS = [
     options: [
       { label: "A pep talk before trying out.", category: "CAN_DO" },
       { label: "A quiet reminder to be you.", category: "BELIEVE" },
-      { label: "A note about kindness & friendship.", category: "FRIENDS" },
-      { label: "A checklist toward a dream.", category: "DREAMS" }
+      { label: "A note about kindness & friendship.", category: "GIRLS_RULE" },
+      { label: "A checklist toward a dream.", category: "TOTALLY_ROCKS" }
     ]
   },
   {
@@ -151,8 +107,8 @@ const QUESTIONS = [
     options: [
       { label: "Doing something I thought I couldn’t.", category: "CAN_DO" },
       { label: "Listening to my inner voice.", category: "BELIEVE" },
-      { label: "Laughing with a friend.", category: "FRIENDS" },
-      { label: "Taking one step toward a goal.", category: "DREAMS" }
+      { label: "Laughing with a friend.", category: "GIRLS_RULE" },
+      { label: "Taking one step toward a goal.", category: "TOTALLY_ROCKS" }
     ]
   },
   {
@@ -160,15 +116,12 @@ const QUESTIONS = [
     options: [
       { label: "Trying a new snack.", category: "CAN_DO" },
       { label: "Classic chocolate. 🍫", category: "BELIEVE" },
-      { label: "Sharing popcorn with a friend.", category: "FRIENDS" },
-      { label: "Tea while planning next steps.", category: "DREAMS" }
+      { label: "Sharing popcorn with a friend.", category: "GIRLS_RULE" },
+      { label: "Tea while planning next steps.", category: "TOTALLY_ROCKS" }
     ]
   }
 ];
 
-/* ===========================
-   QUIZ LOGIC (no edits needed)
-=========================== */
 (function(){
   const root = document.getElementById("ar-quiz-screen");
   let step = 0;
@@ -177,20 +130,8 @@ const QUESTIONS = [
 
   const render = () => {
     root.innerHTML = "";
-
-    // Intro
-    if (step === 0) {
-      root.append(intro());
-      return;
-    }
-
-    // Question screens
-    if (step >= 1 && step <= QUESTIONS.length) {
-      root.append(question(step-1));
-      return;
-    }
-
-    // Result
+    if (step === 0) { root.append(intro()); return; }
+    if (step >= 1 && step <= QUESTIONS.length) { root.append(question(step-1)); return; }
     root.append(result());
   };
 
@@ -232,16 +173,7 @@ const QUESTIONS = [
     });
     next.classList.add("ar-btn");
 
-    const back = button("Back", () => {
-      // If going back, remove the last recorded vote (best effort).
-      if (step > 1) {
-        // Find which category was chosen on previous screen and decrement once.
-        // (Simple approach: do nothing; or keep a trail. We'll keep a trail.)
-      }
-      step -= 1;
-      if (step < 0) step = 0;
-      render();
-    });
+    const back = button("Back", () => { step = Math.max(0, step - 1); render(); });
     back.classList.add("ar-btn","ar-btn--ghost");
 
     wrap.append(actions([back, next]));
@@ -249,7 +181,6 @@ const QUESTIONS = [
   };
 
   const result = () => {
-    // Pick highest votes; tie-break by first in BOOKS order.
     const winnerKey = Object.keys(votes).reduce((a,b)=> votes[b] > votes[a] ? b : a);
     const winner = BOOKS[winnerKey];
 
@@ -258,7 +189,7 @@ const QUESTIONS = [
     wrap.append(el("h3", {}, `Your match: ${winner.title}`));
     wrap.append(el("p", {}, winner.why));
 
-    const visit = button("See this book", () => { window.location.href = winner.url; });
+    const visit = button("See this book", () => { window.open(winner.url, "_blank", "noopener"); });
     visit.classList.add("ar-btn");
 
     const restart = button("Retake quiz", () => { step = 0; Object.keys(votes).forEach(k => votes[k]=0); render(); });
@@ -269,21 +200,20 @@ const QUESTIONS = [
     return wrap;
   };
 
-  // Helpers
   function el(tag, attrs={}, text) {
     const n = document.createElement(tag);
     Object.entries(attrs).forEach(([k,v]) => n.setAttribute(k,v));
-    if (text) n.textContent = text;
+    if (text !== undefined) n.textContent = text;
     return n;
   }
   function button(label, onClick){ const b = el("button", {}, label); b.type="button"; b.addEventListener("click", onClick); return b; }
   function actions(children){ const div = el("div", { class:"ar-actions" }); children.forEach(c=>div.append(c)); return div; }
   function progress(ratio){ const bar = el("div", { class:"ar-progress" }); const fill = el("div"); fill.style.width = Math.round(ratio*100) + "%"; bar.append(fill); return bar; }
 
-  // Start
   render();
 })();
 </script>
+
 <noscript>
   <p><strong>Quiz requires JavaScript.</strong> You can browse books here:</p>
   <ul>
@@ -295,5 +225,8 @@ const QUESTIONS = [
     <li><a href="https://www.sps.com/shop-books/use-your-girl-power-ashley-rice" target="_blank" rel="noopener">Use Your Girl Power: Nothing Can Hold You Back!</a></li>
   </ul>
 </noscript>
+
+</body>
+</html>
 
 
