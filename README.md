@@ -236,11 +236,64 @@ That legacy schema is what triggered the Rich Results errors above. Since I no l
 1. Remove the leftover LocalBusiness schema, and
 2. Keep only schema relevant to my site, such as WebSite.
 
+## 🎉 Schema Validation Success
+
+As of **September 8, 2025**, our structured data now passes Google’s Rich Results Test with **no critical issues detected**.  
+
+This milestone was achieved by:
+- Removing Squarespace’s auto-injected `LocalBusiness` schema (which required an address field).  
+- Replacing it with a clean `Person` + `WebSite` schema tailored for an author/creator site.  
+
+✅ Result: Google now recognizes valid schema with **0 errors**.
+
+---
+
+### 🔧 Footer Code Injection Used
+
+The following code was added in **Squarespace → Settings → Advanced → Code Injection → Footer** to override and clean up schema:
+
+```
+html
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ashley Rice",
+  "url": "https://www.ashleyrice.net",
+  "image": "https://static1.squarespace.com/.../AshleyRiceLogo.png"
+}
+</script>
+
+<script>
+(function () {
+  function removeLocalBusiness() {
+    document.querySelectorAll('script[type="application/ld+json"]').forEach(s => {
+      try {
+        const j = JSON.parse(s.textContent || '{}');
+        const types = Array.isArray(j['@type']) ? j['@type'] : [j['@type']];
+        if (types && types.map(String).map(x=>x.toLowerCase()).includes('localbusiness')) {
+          s.remove();
+        }
+      } catch (_) {}
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', removeLocalBusiness);
+  } else {
+    removeLocalBusiness();
+  }
+  new MutationObserver(removeLocalBusiness).observe(document.documentElement, { childList: true, subtree: true });
+})();
+</script>
+yaml
+````
+
+
 ## Next Actions Checklist
 - [x] ~~Fix broken Pinterest backlinks (301 redirect or remove)~~
-- [ ] Remove LocalBusiness schema from Squarespace template
-- [ ] Add WebSite schema only
-- [ ] Re-run Google Rich Results Test after changes
+- [x] ~~Remove LocalBusiness schema from Squarespace template~~
+- [x] ~~Add WebSite schema only~~
+- [x] ~~Re-run Google Rich Results Test after changes~~
 - [ ] Monitor SEMrush for visibility and keyword improvements
 
 ## Lessons Learned
