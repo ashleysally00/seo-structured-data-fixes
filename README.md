@@ -222,8 +222,7 @@ As part of improving on-page engagement, I built an interactive quiz:
 
 It’s a simple multiple-choice quiz that links readers to the book that matches their answers, providing both fun interaction and additional internal linking for SEO.  
 
-👉 [Open the quiz](books-quiz.html)
-
+👉 [Open the quiz](books_quiz.html)
 
 ## Store / Commerce Pages and Schema
 
