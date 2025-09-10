@@ -156,7 +156,7 @@ The page needed more written content so Google could understand what it was abou
 ### Keyword focus on About
 
 - Added natural keywords: *books for girls*, *tweens*, *girl power*, *confidence*, *poems*, *quotes*, *illustrator*.  
-- Expanded intro copy to ~150–300 words, balancing authentic voice with keyword clarity.  
+- Expanded intro copy to 150–300 words, balancing authentic voice with keyword clarity.  
 
 ### Targeted H1 fix (About page only)
 
