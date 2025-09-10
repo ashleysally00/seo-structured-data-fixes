@@ -145,6 +145,36 @@ The page needed more written content so Google could understand what it was abou
 - Still feels authentic to the brand and voice, while improving chances of ranking.  
 - Other pages (About, Wholesale, Contact) are still flagged for low word count and will be addressed next.  
 
+## On-Page SEO Decisions (About vs. Wholesale)
+
+### Why prioritize the About page over Wholesale
+
+- **Search intent:** The About page is where most new visitors land to understand who I am and what the site is about.  
+- **SEO value:** Strengthening the About page supports E-E-A-T (experience, expertise, authoritativeness, trust).  
+- **Audience:** Wholesale is important, but it's for a narrower group (buyers/partners). About reaches a broader audience and builds brand trust.  
+
+### Keyword focus on About
+
+- Added natural keywords: *books for girls*, *tweens*, *girl power*, *confidence*, *poems*, *quotes*, *illustrator*.  
+- Expanded intro copy to ~150–300 words, balancing authentic voice with keyword clarity.  
+
+### Targeted H1 fix (About page only)
+
+On the **About page** → **Page Settings** → **Advanced** → **Page Header Code Injection**:
+
+```html
+<style>
+/* About page H1 override */
+#block-yui_3_17_2_1_1757466580852_5138 h1 {
+  font-size: 32px !important;   /* adjust to taste */
+  line-height: 1.2em !important;
+  margin-top: 0.5em !important;
+  margin-bottom: 0.5em !important;
+  font-weight: 500 !important;
+}
+</style>
+```
+
 
 ## Verifying Domain in Google Search Console
 
