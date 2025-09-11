@@ -118,6 +118,50 @@ Squarespace was stacking the Blog Collection description on top of my page-level
 - The built-in character counter is unreliable — always confirm externally.  
 - One page = one clean, unique description under 160 characters.
 
+## 📚Books Page Redesign (Squarespace 7.1)
+
+The original Books section was hard to get the covers the same size and to line up at the same time due to Squarespace limitations. The old layout snapped image blocks to the grid with inconsistent padding, so covers never matched size reliably. We got around this by making the books into a **gallery** with a fixed 2:3 aspect ratio so all covers align cleanly.
+
+### Why this was difficult
+
+Squarespace galleries don't allow adding text blocks underneath each image.  
+
+If we had simply switched to a gallery without a workaround, we would have lost both:
+- **Technical SEO progress** → the unique H1 setup and heading hierarchy I had already fixed (no duplicates, one clear H1 per page).  
+- **On-Page SEO signals** → meaningful content like H2 book titles, H3 bylines, and keyword-rich summaries that Google needs to understand the page.  
+
+### Workaround: Markdown/HTML inside captions
+
+To preserve both visual consistency *and* SEO:
+- We added **Markdown/HTML directly in the gallery description fields**:
+  - `<h2>` for the book title.  
+  - `<h3>` for the byline ("Written and illustrated by Ashley Rice").  
+  - `<span>` for the description (treated as paragraph text).  
+- This ensured the Books page kept a crawlable heading structure, instead of collapsing into just images with single-line captions.  
+
+**Example caption HTML:**
+```html
+<h2>Girls Rule</h2>
+<h3>Written and illustrated by Ashley Rice</h3>
+<span>Girls Rule is filled with cute poems, quotes, and drawings that apply to everyday life. Perfect for tweens who love inspiring words, creativity, and art.</span>
+```
+
+### Implementation steps
+
+1. Built the new gallery section with consistent covers and structured captions.
+2. Hit the heart (favorite) to save it to the Library.
+3. Went to the Books page → Add Section → My Library → inserted the saved gallery.
+4. Deleted the messy old Books section with uneven image blocks.
+5. Saved changes — leaving us with a clean, SEO-friendly gallery section.
+
+### Why this matters
+
+- Solves the alignment/padding issues of the old Books section.
+- Retains all previous technical SEO fixes (unique H1, no duplicate titles).
+- Adds proper on-page SEO content (H2 titles, H3 bylines, keyword-rich summaries).
+- Improves both visual authority and search authority at the same time.
+
+
 ## Addressing Low Word Count (On-Page SEO)
 
 The next issue flagged by SEMrush was a **“low word count” warning.**  
@@ -318,7 +362,6 @@ html
 yaml
 ````
 
-
 ## Next Actions Checklist
 - [x] ~~Fix broken Pinterest backlinks (301 redirect or remove)~~
 - [x] ~~Remove LocalBusiness schema from Squarespace template~~
@@ -344,5 +387,9 @@ yaml
 - After Search Console verifies domain, check **Index Coverage** to confirm all 5 main pages are indexed  
 - ~~Use **Rich Results Test** again to confirm schema cleanup (WebSite vs. LocalBusiness)~~  
 - ~~Consider adding 150–300 words of intro text to Books and About pages for SEO~~  
-- Re-run SEMrush once quota resets to confirm errors are resolved  
+- Re-run SEMrush once quota resets to confirm errors are resolved
+- Fix the mobile view — check alignment of covers + captions in one-column layouts.
+- Verify with SEMrush or Google crawler that H2/H3 headings inside captions are being read correctly.
+- Look into: compressing book covers to lighter WebP/PNG for better performance (improves Core Web Vitals).
+
 
