@@ -18,7 +18,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
 - [SEO Structured Data Fixes (In Progress)](#seo-structured-data-fixes-in-progress)
 - [Snapshot References](#snapshot-references)
-- [Books Gallery (Rebuild & SEO-Preserving Captions)](#books-gallery-rebuild--seo-preserving-captions) 📖
+- [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
 - [Books Quiz](#books-quiz) ✨📚
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
