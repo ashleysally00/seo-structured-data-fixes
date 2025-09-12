@@ -16,6 +16,8 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Fixing Meta Descriptions & Removing Blog SEO](#fixing-meta-descriptions--removing-blog-seo)
 - [Addressing Low Word Count (On-Page SEO)](#addressing-low-word-count-on-page-seo)
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
+- [Anchor Links to Jump Directly to Books Section](#anchor-links-to-jump-directly-to-books-section)
+- [Making Book Titles Clickable](#making-book-titles-clickable)
 - [SEO Structured Data Fixes (In Progress)](#seo-structured-data-fixes-in-progress)
 - [Snapshot References](#snapshot-references)
 - [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
