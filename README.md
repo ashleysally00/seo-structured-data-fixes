@@ -299,6 +299,47 @@ books-section
 
 Now, when visitors click **"See All Books"** on the homepage, they are taken directly to the book covers on the Books page without extra scrolling.
 
+## Making Book Titles Clickable
+
+The Books page redesign used a Squarespace gallery to align all book covers in a consistent grid. By default, only the **covers** were clickable links to individual book pages. While this worked, it wasn’t always obvious to visitors that the covers could be clicked.  
+
+Adding separate buttons inside or under the gallery would have been clunky and disrupted the clean layout. To improve usability without cluttering the design, we made the **book titles (h2s)** clickable as well.  
+
+### Implementation
+
+1. **Updated Gallery Captions**  
+   - Wrapped each `<h2>` book title in an `<a>` tag linking to its internal book page.  
+   - Example:  
+     ```html
+     <h2>
+       <a href="https://www.ashleyrice.net/girls-rule">Girls Rule</a>
+     </h2>
+     <h3>Written and illustrated by Ashley Rice</h3>
+     <span>Book description here...</span>
+     ```
+
+2. **Styled Links with Custom CSS**  
+   - By default, links add underlining, which made every book title look cluttered.  
+   - To fix this, we added custom CSS in **Squarespace → Design → Custom CSS**:  
+     ```css
+     .sqs-gallery-block .gallery-caption h2 a {
+       text-decoration: none;   /* removes underline */
+       color: inherit;          /* keeps same color as h2 */
+     }
+
+     .sqs-gallery-block .gallery-caption h2 a:hover {
+       text-decoration: underline; /* underline on hover only */
+       cursor: pointer;            /* shows hand icon on hover */
+     }
+     ```
+
+### Result
+
+- Book titles are now **clickable links** to their dedicated pages.  
+- Visitors can use either the **cover image** or the **title text** to navigate.  
+- The page stays clean (no stacked buttons, no permanent underlines), with a clear hand cursor on hover for accessibility.
+
+
 ## SEO Structured Data Fixes (In Progress)
 
 ### Rich Test Results Snapshot
