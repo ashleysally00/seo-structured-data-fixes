@@ -247,6 +247,31 @@ google-site-verification=xxxxxxxxxxxxxxxxxxxxxxxx
 
 After the TXT record is verified, I will see that my domain is connected in Search Console. Then I'll be able to track performance data, keywords, and any future SEO issues directly from Google.
 
+# SEMrush Limits & Google Search Console Insights
+
+SEMrush is free up to a certain point — you can run a site audit and a few keyword checks. After that, you have to either wait a month for the free credits to reset or upgrade to a paid plan.
+
+Since I had already hit the free limit, I switched to **Google Search Console** for direct data from Google.
+
+## What We Found
+
+Looking at the Queries report for `ashleyrice.net` (last 3 months):
+
+* **"ashley rice"** → 1,487 impressions, 18 clicks
+* **"ashley rice books"** → 80 impressions, 5 clicks
+* **"ashley rice, latest"** → 81 impressions, 0 clicks
+
+Most visitors searching *"ashley rice books"* were still being sent to the **homepage** instead of the Books page.
+
+## Action Taken
+
+Because users clearly wanted the books but landed on the homepage first, I added a **prominent button + arrow at the top of the homepage**. The button links directly to the `/books` page, making it easy for visitors to jump straight into the collection.
+
+This adjustment aligns the homepage with actual user intent:
+
+* **Homepage = entry point**
+* **Button = immediate path to books**
+
 ## SEO Structured Data Fixes (In Progress)
 
 ### Rich Test Results Snapshot
