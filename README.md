@@ -305,7 +305,7 @@ Now, when visitors click **"See All Books"** on the homepage, they are taken dir
 
 The Books page redesign used a Squarespace gallery to align all book covers in a consistent grid. By default, only the **covers** were clickable links to individual book pages. While this worked, it wasn’t always obvious to visitors that the covers could be clicked.  
 
-Adding separate buttons inside or under the gallery would have been clunky and disrupted the clean layout. To improve usability without cluttering the design, we made the **book titles (h2s)** clickable as well.  
+Adding separate buttons inside or under the gallery would be clunky and disrupt he clean layout. To improve usability without cluttering the design, we made the **book titles (h2s)** clickable as well.  
 
 ### Implementation
 
