@@ -272,6 +272,33 @@ This adjustment aligns the homepage with actual user intent:
 * **Homepage = entry point**
 * **Button = immediate path to books**
 
+## Anchor Links to Jump Directly to Books Section
+
+One issue we found was that homepage buttons pointing to `/books` only took users to the top of the Books page. Visitors still had to scroll down to reach the actual book covers.
+
+To improve usability, we added an **anchor link** so the buttons jump directly to the book section.
+
+### How It Works
+
+1. **Add a Section ID**
+   * On the Books page, edit the section where the book covers start.
+   * In Section Settings, set the **Section ID** to:
+
+```
+books-section
+```
+
+2. **Update Button Links**
+   * Instead of linking homepage buttons to `/books`, link them to:
+
+```
+/books#books-section
+```
+
+### Result
+
+Now, when visitors click **"See All Books"** on the homepage, they are taken directly to the book covers on the Books page without extra scrolling.
+
 ## SEO Structured Data Fixes (In Progress)
 
 ### Rich Test Results Snapshot
