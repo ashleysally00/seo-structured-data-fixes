@@ -341,8 +341,6 @@ Adding separate buttons inside or under the gallery would be clunky and disrupt 
 - Visitors can use either the **cover image** or the **title text** to navigate.  
 - The page stays clean (no stacked buttons, no permanent underlines), with a clear hand cursor on hover for accessibility.
 
-We made each book title clickable (in addition to the cover image). This improves accessibility and on-page SEO by giving search engines descriptive anchor text, not just image links.
-
 ## SEO Structured Data Fixes (In Progress)
 
 ### Rich Test Results Snapshot
