@@ -247,7 +247,7 @@ google-site-verification=xxxxxxxxxxxxxxxxxxxxxxxx
 
 After the TXT record is verified, I will see that my domain is connected in Search Console. Then I'll be able to track performance data, keywords, and any future SEO issues directly from Google.
 
-# SEMrush Limits & Google Search Console Insights
+## SEMrush Limits & Google Search Console Insights
 
 SEMrush is free up to a certain point — you can run a site audit and a few keyword checks. After that, you have to either wait a month for the free credits to reset or upgrade to a paid plan.
 
