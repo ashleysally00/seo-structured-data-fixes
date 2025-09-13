@@ -445,6 +445,18 @@ To improve navigation and SEO, we added a keyword-rich internal link at the bott
 
 This reinforces the query **"Ashley Rice books"** with descriptive anchor text while giving visitors a direct path to the Books section.
 
+### External Links Used
+
+As part of SEO updates, we added direct retailer links to guide users toward Ashley Rice’s books:
+
+- [Amazon Author Page](https://www.amazon.com/stores/Ashley-Rice/author/B001JPAHAS?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true&ccs_id=6ddd6743-9783-47e3-95c6-fbcf0629e45f)  
+- [Barnes & Noble Author Listings](https://www.barnesandnoble.com/s/%22Ashley%20Rice%22;jsessionid=5C96C22DF928CDA02A68F31B8AF4EDDF.prodny_store01-atgap06?Ntk=P_key_Contributor_List&Ns=P_Sales_Rank&Ntx=mode+matchall)
+
+These links were added to:  
+- **About Page (final line):** “Check out her current books here” → linked to Amazon.  
+- **Wholesale Page (caption under photo):** Added links for Amazon and Barnes & Noble to give readers non-wholesale options.
+
+
 ## SEO Structured Data Fixes (Completed)
 
 ### Rich Test Results Snapshot
