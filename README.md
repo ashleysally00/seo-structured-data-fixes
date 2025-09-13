@@ -18,7 +18,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
 - [Anchor Links to Jump Directly to Books Section](#anchor-links-to-jump-directly-to-books-section)
 - [Making Book Titles Clickable](#making-book-titles-clickable)
-- [SEO Structured Data Fixes (In Progress)](#seo-structured-data-fixes-in-progress)
+- [SEO Structured Data Fixes (Completed)](#seo-structured-data-fixes-completed)
 - [Snapshot References](#snapshot-references)
 - [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
 - [Books Quiz](#books-quiz) ✨📚
@@ -439,7 +439,7 @@ Squarespace 7.1 handles gallery image alt text in two ways:
 ### Result
 By renaming images in the Asset Library, we ensured each gallery image has proper invisible alt text for screen readers and search engines, while keeping the visible layout clean.
 
-## SEO Structured Data Fixes (In Progress)
+## SEO Structured Data Fixes (Completed)
 
 ### Rich Test Results Snapshot
 
@@ -476,8 +476,6 @@ Replace the incorrect LocalBusiness schema with WebSite schema:
   "url": "https://www.ashleyrice.net"
 }
 ```
-
-⚠️ **Note:** This change has not been applied yet. The LocalBusiness schema is still active and continues to trigger errors. This section remains open until it's resolved.
 
 ## Snapshot References
 
