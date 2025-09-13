@@ -394,6 +394,23 @@ Learn about Ashley Rice, author and illustrator of girl-power books for girls an
 
 This update strengthens branding, improves clarity, and helps Google distinguish Ashley Rice (author/illustrator) from other people with the same name, while reinforcing the connection to **Ashley Rice Books**.
 
+### Homepage SEO Update
+
+Google Search Console showed that most visitors searching for **"ashley rice books"** were landing on the homepage first. To better align with this behavior, we refined the homepage metadata to reinforce the brand and guide users toward the Books page without sounding pushy.
+
+**Original SEO Title:**  
+Ashley Rice – Author & Illustrator  
+
+**Original SEO Description:**  
+Inspiring poems, quotes, and books by Ashley Rice for girls and tweens—celebrating confidence, friendship, and creativity. (164 chars)  
+
+**Updated SEO Title:**  
+Ashley Rice Books – Inspiring Poems, Quotes & Girl Power for Tweens  
+
+**Updated SEO Description:**  
+Discover Ashley Rice Books—poems, quotes, and doodles for girls and tweens that celebrate confidence, friendship, and creativity. See current titles today. (159 chars)  
+
+This update emphasizes the query **"ashley rice books"**, strengthens the homepage as the main entry point, and provides a clear action path for visitors to view current titles.
 
 ## SEO Structured Data Fixes (In Progress)
 
