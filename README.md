@@ -439,6 +439,12 @@ Squarespace 7.1 handles gallery image alt text in two ways:
 ### Result
 By renaming images in the Asset Library, we ensured each gallery image has proper invisible alt text for screen readers and search engines, while keeping the visible layout clean.
 
+### About Page Internal Link
+To improve navigation and SEO, we added a keyword-rich internal link at the bottom of the About page:
+- Check out her current books here!
+
+This reinforces the query **"Ashley Rice books"** with descriptive anchor text while giving visitors a direct path to the Books section.
+
 ## SEO Structured Data Fixes (Completed)
 
 ### Rich Test Results Snapshot
