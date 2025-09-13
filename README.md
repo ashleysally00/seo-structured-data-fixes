@@ -334,12 +334,27 @@ Adding separate buttons inside or under the gallery would be clunky and disrupt 
        cursor: pointer;            /* shows hand icon on hover */
      }
      ```
-
 ### Result
 
 - Book titles are now **clickable links** to their dedicated pages.  
 - Visitors can use either the **cover image** or the **title text** to navigate.  
 - The page stays clean (no stacked buttons, no permanent underlines), with a clear hand cursor on hover for accessibility.
+
+## Homepage & Page SEO Updates
+
+Looking at Google Search Console results, we saw that most people searched for **"ashley rice books"** but were landing on the homepage instead of the Books page. Since users clearly wanted the books, we made "Ashley Rice Books" an action item by adding buttons and arrows linking directly to the Books section.
+
+At the same time, we refined the meta descriptions across key pages (Home, Books, About, Wholesale, Contact) to better reflect search behavior and user intent. The goal was to emphasize **Ashley Rice Books** while keeping the wording inviting, not pushy.
+
+### Example: Books Page SEO Description
+**Original:**  
+Girl-power poems, quotes, and books by Ashley Rice for girls and tweens, with messages of encouragement, love, and friendship. (274 chars)  
+
+**Updated:**  
+Explore Ashley Rice’s current books for girls and tweens—filled with poems, doodles, and quotes about girl power, creativity, confidence, and friendship. (160 chars)  
+
+This update ensures the Books page directly matches the query **"ashley rice books"**, while the homepage provides a clear action path to view titles.
+
 
 ## SEO Structured Data Fixes (In Progress)
 
