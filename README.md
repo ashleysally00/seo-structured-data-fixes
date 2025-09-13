@@ -376,6 +376,25 @@ See Ashley Rice’s current titles available wholesale—books, greeting cards, 
 
 This update improves clarity, keeps the wording natural, and still reinforces keywords like **Ashley Rice books** and **wholesale**.
 
+### About Page SEO Update
+
+The About page originally had a short description that mentioned Ashley Rice as an author and illustrator, but it didn’t clearly distinguish her from other people with the same name. It also didn’t emphasize **Ashley Rice Books** as a branded keyword.
+
+**Original SEO Title:**  
+About – Ashley Rice  
+
+**Original SEO Description:**  
+Ashley Rice is the author and illustrator of inspiring books for girls and tweens about girl power, creativity, and confidence. (132 chars)  
+
+**Updated SEO Title:**  
+About Ashley Rice – Author & Illustrator of Girl Power Books  
+
+**Updated SEO Description:**  
+Learn about Ashley Rice, author and illustrator of girl-power books for girls and tweens—filled with poems, quotes, doodles, and creativity. (157 chars)  
+
+This update strengthens branding, improves clarity, and helps Google distinguish Ashley Rice (author/illustrator) from other people with the same name, while reinforcing the connection to **Ashley Rice Books**.
+
+
 ## SEO Structured Data Fixes (In Progress)
 
 ### Rich Test Results Snapshot
