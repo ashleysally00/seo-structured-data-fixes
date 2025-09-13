@@ -222,7 +222,6 @@ On the **About page** → **Page Settings** → **Advanced** → **Page Header C
 </style>
 ```
 
-
 ## Verifying Domain in Google Search Console
 
 After addressing duplicate title tags, I moved on to verifying my site with **Google Search Console**.
@@ -359,6 +358,23 @@ Discover Ashley Rice books for girls and tweens—filled with poems, doodles, an
 This update directly targets user search behavior, makes the Google snippet more engaging, and reinforces the Books page as the main destination for the query *"ashley rice books."*
 oks."
 
+### Wholesale Page SEO Update
+
+We refined the Wholesale page metadata to better match user intent and avoid sounding too pushy. The previous description emphasized "ordering," while the new version highlights *seeing current titles available wholesale*, which feels friendlier and aligns with the actual content.
+
+**Original SEO Title:**  
+Wholesale – Ashley Rice books, greeting cards, calendars, and notepads  
+
+**Original SEO Description:**  
+Order Ashley Rice's books, greeting cards, calendars, and notepads wholesale, all with girl-power themes of love, encouragement, and confidence. (158 chars)  
+
+**Updated SEO Title:**  
+Ashley Rice Books – See Current Titles Available Wholesale  
+
+**Updated SEO Description:**  
+See Ashley Rice’s current titles available wholesale—books, greeting cards, and calendars featuring poems, quotes, and girl-power themes of confidence and friendship. (159 chars)  
+
+This update improves clarity, keeps the wording natural, and still reinforces keywords like **Ashley Rice books** and **wholesale**.
 
 ## SEO Structured Data Fixes (In Progress)
 
