@@ -412,6 +412,33 @@ Discover Ashley Rice Books—poems, quotes, and doodles for girls and tweens tha
 
 This update emphasizes the query **"ashley rice books"**, strengthens the homepage as the main entry point, and provides a clear action path for visitors to view current titles.
 
+## Adding Alt Text in Squarespace 7.1 Galleries
+
+Squarespace 7.1 handles gallery image alt text in two ways:
+
+1. **Captions / Descriptions**  
+   - If you type text into the image **Caption** or **Description** field, Squarespace will use that text as the image’s alt text.  
+   - ⚠️ However, this text will also **display on the page**. Since we were already using custom HTML (`<h2>`, `<h3>`, `<span>`) in descriptions for book titles and summaries, adding alt text here would clutter the design.  
+
+2. **Asset Library Filenames (Hidden Alt Text)**  
+   - If you rename the image in the **Asset Library**, Squarespace will use the file name as the invisible `alt` attribute.  
+   - This gives you proper alt text for SEO and accessibility without adding visible text on the page.  
+
+### How We Fixed It
+1. Go to **Website → Assets**.  
+2. Find each gallery image (book covers, calendars, illustrations).  
+3. Click the **⋯** next to the image → **Rename**.  
+4. Enter a descriptive filename in plain English (no dashes), e.g.:  
+   - `You Are a Girl Who Can Do Anything by Ashley Rice book cover.jpg`  
+   - `Girls Rule Ashley Rice book cover.jpg`  
+   - `You Are an Amazing Girl Ashley Rice calendar cover.jpg`  
+   - `Penelope J Miller narrator illustration Ashley Rice.jpg`  
+   - `Heart arrow doodle illustration.png`  
+   - `Ashley Rice with earlier books cards and stationery.jpg`  
+
+### Result
+By renaming images in the Asset Library, we ensured each gallery image has proper invisible alt text for screen readers and search engines, while keeping the visible layout clean.
+
 ## SEO Structured Data Fixes (In Progress)
 
 ### Rich Test Results Snapshot
