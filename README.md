@@ -456,6 +456,48 @@ These links were added to:
 - **About Page (final line):** “Check out her current books here” → linked to Amazon.  
 - **Wholesale Page (caption under photo):** Added links for Amazon and Barnes & Noble to give readers non-wholesale options.
 
+# Accessibility Improvement: Fixing Color Contrast
+
+We audited our site for accessibility issues and discovered that the **default Squarespace 7.1 theme colors** used for buttons (light lavender background + white text) did not pass WCAG contrast guidelines. This made important calls-to-action like *Read the Books* and *Sign Up* harder to read.
+
+## Tools Used
+
+- **WAVE Web Accessibility Evaluation Tool:** Flagged missing alt text and *low-contrast button text*.
+- **WebAIM Contrast Checker:** Allowed us to test background and text color combinations for WCAG AA/AAA compliance.
+
+## Process
+
+1. **Identified the problem:** WAVE reported low-contrast warnings on buttons.
+2. **Checked contrast ratios:** Used the Contrast Checker to verify the default purple + white text failed accessibility standards.
+3. **Edited section color themes:** In Squarespace 7.1, each page section uses a *Color Theme* (e.g., **Bright 2**, **Lightest 1**). We located which theme controlled each button and edited the **Primary Button Background** and **Primary Button Text** colors.
+4. **Chose accessible colors:** Updated button backgrounds to a darker purple `#5A2D82` with white `#FFFFFF` text, which scored a 9.85:1 contrast ratio (passing WCAG AA and AAA).
+5. **Applied changes across all buttons:** Updated Primary, Secondary, Tertiary, and Form Submit buttons so the entire site used the same accessible purple.
+
+## Troubleshooting
+
+- At first, we updated the **Primary Button Background**, but this didn't affect the *Sign Up* button in the footer.
+- We learned that **form buttons** (newsletter/contact) are controlled under **Form Fields → Button Background**, not the Primary Button setting.
+- After editing the correct section and aligning both values, the footer button updated properly and passed accessibility checks.
+
+## Before vs. After
+
+**Before:**
+- Buttons used the Squarespace default **light lavender background** with **white text**.
+- This combination failed WCAG contrast checks and was flagged in WAVE as *low-contrast text*.
+- Example:
+   - *"Sign Up"* button in the footer appeared pale and was difficult to read against its background.
+
+**After:**
+- All buttons were updated to use **dark purple** (`#5A2D82`) backgrounds with **white** (`#FFFFFF`) text.
+- This new pairing passes WCAG AA/AAA contrast requirements (contrast ratio ~9.85:1).
+- Example:
+   - *"Sign Up"* footer button now displays with a bold purple background and high-contrast white text, making it much more legible.
+
+## Outcome
+
+- All buttons across the site now use a consistent purple (`#5A2D82`) with white text.
+- Accessibility warnings from WAVE were resolved.
+- Calls-to-action are easier to see and interact with, improving both usability and inclusivity.
 
 ## SEO Structured Data Fixes (Completed)
 
