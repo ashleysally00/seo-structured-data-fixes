@@ -18,6 +18,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
 - [Anchor Links to Jump Directly to Books Section](#anchor-links-to-jump-directly-to-books-section)
 - [Making Book Titles Clickable](#making-book-titles-clickable)
+- [Accessibility Improvement: Fixing Color Contrast](#accessibility-improvement-fixing-color-contrast)
 - [SEO Structured Data Fixes (Completed)](#seo-structured-data-fixes-completed)
 - [Snapshot References](#snapshot-references)
 - [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
