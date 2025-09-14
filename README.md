@@ -459,7 +459,9 @@ These links were added to:
 
 # Accessibility Improvement: Fixing Color Contrast
 
-We audited our site for accessibility issues and discovered that the **default Squarespace 7.1 theme colors** used for buttons (light lavender background + white text) did not pass WCAG contrast guidelines. This made important calls-to-action like *Read the Books* and *Sign Up* harder to read.
+We audited our site for accessibility issues and discovered that the **default Squarespace 7.1 theme colors** used for buttons (light lavender background + white text) did not pass WCAG contrast guidelines. This made important calls-to-action like *Read the Books* and *Sign Up* harder to read. 
+
+Low-contrast buttons aren’t just a technical issue - they make it harder for people with low vision, older users, or anyone viewing the site in bright light to read and interact with calls-to-action.
 
 ## Tools Used
 
