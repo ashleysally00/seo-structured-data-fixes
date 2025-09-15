@@ -505,6 +505,47 @@ These links were added to:
 - The site is now more accessible for users who rely on screen readers.
 - SEO is unaffected since other metadata and headings provide keyword context.
 
+# Fix: Button Linking Directly to Form
+
+While editing buttons, we noticed that the **"Share your own answer"** button did not jump directly to the form. Instead, it only sent users to the **top of the Books page**, which meant they had to scroll down to find the form manually.
+
+To improve usability and accessibility, we updated the button to link **directly to the form block** on the Books page.
+
+## How We Fixed It
+
+Squarespace 7.1 gives each block on a page a unique ID (e.g., `block-yui_...`). By finding the ID of the form block and appending it to the page URL, we created a button that jumps to the exact section.
+
+### Steps:
+
+1. Open the page in your browser (Chrome recommended).
+2. Right-click on the block you want to target (in this case, the form) → choose **Inspect**.
+3. In the HTML panel, find the `<div>` with an `id` that starts with:
+
+   ```
+   block-yui_...
+   ```
+
+   Example:
+
+   ```
+   id="block-yui_3_17_2_1_1757901031143_2230"
+   ```
+
+4. Copy that full ID.
+5. Edit the button link and format it like this:
+
+   ```
+   /pagename#block-yui_3_17_2_1_1757901031143_2230
+   ```
+
+   - `/pagename` = the slug of the page (e.g., `/books`)
+   - `#block-yui_...` = the block ID you copied
+
+**Example used here:**
+
+```
+/books#block-yui_3_17_2_1_1757901031143_2230
+```
 
 ## SEO Structured Data Fixes (Completed)
 
