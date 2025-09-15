@@ -18,7 +18,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Verifying Domain in Google Search Console](#verifying-domain-in-google-search-console)
 - [Anchor Links to Jump Directly to Books Section](#anchor-links-to-jump-directly-to-books-section)
 - [Making Book Titles Clickable](#making-book-titles-clickable)
-- [Accessibility Improvement: Fixing Color Contrast](#accessibility-improvement-fixing-color-contrast)
+- [Accessibility Fixes: Buttons & Logo Alt Text](#accessibility-fixes)
 - [SEO Structured Data Fixes (Completed)](#seo-structured-data-fixes-completed)
 - [Snapshot References](#snapshot-references)
 - [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
@@ -457,50 +457,54 @@ These links were added to:
 - **About Page (final line):** “Check out her current books here” → linked to Amazon.  
 - **Wholesale Page (caption under photo):** Added links for Amazon and Barnes & Noble to give readers non-wholesale options.
 
-# Accessibility Improvement: Fixing Color Contrast
+# Accessibility Fixes
 
-We audited our site for accessibility issues and discovered that the **default Squarespace 7.1 theme colors** used for buttons (light lavender background + white text) did not pass WCAG contrast guidelines. This made important calls-to-action like *Read the Books* and *Sign Up* harder to read. 
-
-Low-contrast buttons aren’t just a technical issue - they make it harder for people with low vision, older users, or anyone viewing the site in bright light to read and interact with calls-to-action.
-
-## Tools Used
-
-- **WAVE Web Accessibility Evaluation Tool:** Flagged missing alt text and *low-contrast button text*.
-- **WebAIM Contrast Checker:** Allowed us to test background and text color combinations for WCAG AA/AAA compliance.
-
-## Process
-
-1. **Identified the problem:** WAVE reported low-contrast warnings on buttons.
-2. **Checked contrast ratios:** Used the Contrast Checker to verify the default purple + white text failed accessibility standards.
-3. **Edited section color themes:** In Squarespace 7.1, each page section uses a *Color Theme* (e.g., **Bright 2**, **Lightest 1**). We located which theme controlled each button and edited the **Primary Button Background** and **Primary Button Text** colors.
-4. **Chose accessible colors:** Updated button backgrounds to a darker purple `#5A2D82` with white `#FFFFFF` text, which scored a 9.85:1 contrast ratio (passing WCAG AA and AAA).
-5. **Applied changes across all buttons:** Updated Primary, Secondary, Tertiary, and Form Submit buttons so the entire site used the same accessible purple.
-
-## Troubleshooting
-
-- At first, we updated the **Primary Button Background**, but this didn't affect the *Sign Up* button in the footer.
-- We learned that **form buttons** (newsletter/contact) are controlled under **Form Fields → Button Background**, not the Primary Button setting.
-- After editing the correct section and aligning both values, the footer button updated properly and passed accessibility checks.
-
-## Before vs. After
+### Fix 1: Buttons
 
 **Before:**
 - Buttons used the Squarespace default **light lavender background** with **white text**.
-- This combination failed WCAG contrast checks and was flagged in WAVE as *low-contrast text*.
+   - This combination failed WCAG contrast checks and was flagged in WAVE as *low-contrast text*.
+- Some buttons had **long labels** (e.g., *“Shop Ashley Rice Calendar at Hallmark”*) that wrapped onto two lines.
+   - WAVE flagged these as accessibility errors because wrapped button text is harder for screen readers and reduces usability.
 - Example:
    - *"Sign Up"* button in the footer appeared pale and was difficult to read against its background.
+   - The *“Shop Ashley Rice Calendar at Hallmark”* button appeared oversized and cluttered due to the wrapping text.
 
 **After:**
 - All buttons were updated to use **dark purple** (`#5A2D82`) backgrounds with **white** (`#FFFFFF`) text.
-- This new pairing passes WCAG AA/AAA contrast requirements (contrast ratio ~9.85:1).
+   - This pairing passes WCAG AA/AAA contrast requirements (contrast ratio ~9.85:1).
+- Button labels were shortened (e.g., *“Shop Ashley Rice Calendar at Hallmark”* → *“Shop the calendar”*).
+   - Shorter text prevents wrapping, improves readability, and ensures screen readers announce the label clearly.
 - Example:
    - *"Sign Up"* footer button now displays with a bold purple background and high-contrast white text, making it much more legible.
+   - *“Shop the calendar”* button is concise, balanced, and no longer wraps across multiple lines.
 
-## Outcome
+**Outcome:**
+- All buttons across the site now use consistent colors and shorter, accessible text.
+- Both **contrast errors** and **button text wrapping errors** flagged by WAVE were resolved.
+- Calls-to-action are easier to see, understand, and interact with, improving both usability and inclusivity.
 
-- All buttons across the site now use a consistent purple (`#5A2D82`) with white text.
-- Accessibility warnings from WAVE were resolved.
-- Calls-to-action are easier to see and interact with, improving both usability and inclusivity.
+---
+
+### Fix 2: Logo Alt Text
+
+**Before:**
+- The site logo was pulling a long **Site Title** string into its alt text:
+  *“Ashley Rice | Girl Power Author & Illustrator of Poems, Tween Books & Cute Art.”*
+- WAVE flagged this as an **error** because alt text was too long, keyword-stuffed, and not descriptive in a simple way.
+- Long alt text makes it harder for screen readers to announce the logo clearly.
+
+**After:**
+- The **Site Title** was shortened so that the logo’s alt text is concise and clear.
+- Final version: *“Ashley Rice | Author & Illustrator”*
+   - This keeps it descriptive without overloading keywords.
+   - Screen readers can now announce the logo properly without extra clutter.
+
+**Outcome:**
+- The **logo alt text error flagged by WAVE was resolved**.
+- The site is now more accessible for users who rely on screen readers.
+- SEO is unaffected since other metadata and headings provide keyword context.
+
 
 ## SEO Structured Data Fixes (Completed)
 
