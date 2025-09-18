@@ -455,7 +455,7 @@ As part of the SEO updates, we added direct catalog and retailer links to guide 
 - [Amazon Author Page](https://www.amazon.com/stores/Ashley-Rice/author/B001JPAHAS?ref=ap_rdr&isDramIntegrated=true&shoppingPortalEnabled=true&ccs_id=6ddd6743-9783-47e3-95c6-fbcf0629e45f)  
 - [Barnes & Noble Author Listings](https://www.barnesandnoble.com/s/%22Ashley%20Rice%22;jsessionid=5C96C22DF928CDA02A68F31B8AF4EDDF.prodny_store01-atgap06?Ntk=P_key_Contributor_List&Ns=P_Sales_Rank&Ntx=mode+matchall)  
 - [LibraryThing Author Profile](https://www.librarything.com/author/riceashley) — backlink to a bibliographic database used by readers and librarians, supporting SEO credibility in Google Search.  
-- [You Are a Girl Who Can Do Anything · Google Books](https://www.google.com/books/edition/You_Are_a_Girl_Who_Can_Do_Anything/B_KWnAEACAAJ?hl=en) — specific title reference on Google Books for entity alignment and catalog verification.  
+- [Google Books](https://www.google.com/books/edition/You_Are_a_Girl_Who_Can_Do_Anything/B_KWnAEACAAJ?hl=en) — specific title reference on Google Books for entity alignment and catalog verification.  
 
 These links were integrated into site content as follows:  
 - **About Page (final line):** “Check out her current books here” → linked to Amazon.  
