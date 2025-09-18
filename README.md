@@ -23,6 +23,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [SEO Structured Data Fixes (Completed)](#seo-structured-data-fixes-completed)
 - [Snapshot References](#snapshot-references)
 - [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
+- [External Links Used](#external-links-used)
 - [Books Quiz](#books-quiz) ✨📚
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
