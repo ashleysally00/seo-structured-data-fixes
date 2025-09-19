@@ -24,6 +24,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Snapshot References](#snapshot-references)
 - [Books Page Redesign (Squarespace 7.1)](#books-page-redesign-squarespace-71) 📖
 - [External Links Used](#external-links-used)
+- [Social Proof & Authority: Reader Reviews](#social-proof--authority-reader-reviews-) ⭐⭐⭐⭐⭐
 - [Books Quiz](#books-quiz) ✨📚
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
