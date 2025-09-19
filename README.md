@@ -463,6 +463,23 @@ These links were integrated into site content as follows:
 
 **Why this matters:** Adding external catalog and retailer references improves trust signals, supports entity building across book databases, and strengthens overall SEO visibility.
 
+### Social Proof & Authority: Reader Reviews ⭐⭐⭐⭐⭐
+To strengthen **E-E-A-T (Experience, Expertise, Authoritativeness, Trustworthiness)** signals on the site, we added select Amazon reviews to the landing page.
+
+- **Why this matters**  
+  - Reviews act as **social proof**, showing real-world impact and building trust.  
+  - They reinforce **author authority**, demonstrating that books are widely read and valued.  
+  - While reviews don’t directly improve SEO rankings, they **increase engagement metrics** (time on page, scroll depth) that search engines consider as positive signals.  
+  - Outbound links to Amazon also support book visibility where reviews and rankings drive discovery.  
+
+- **Why these reviews**  
+  - We chose a mix for maximum impact:  
+    - Bullying story → emotional resonance.  
+    - Repeat buyer → loyalty and credibility.  
+    - Kid’s own words → authenticity from the target audience.  
+  - Only short excerpts were used, attributed as “— Amazon Reviewer,” keeping within fair use.  
+
+
 # Accessibility Fixes
 
 ### Fix 1: Buttons
