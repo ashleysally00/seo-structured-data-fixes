@@ -398,6 +398,18 @@ Learn about Ashley Rice, author and illustrator of girl-power books for girls an
 
 This update strengthens branding, improves clarity, and helps Google distinguish Ashley Rice (author/illustrator) from other people with the same name, while reinforcing the connection to **Ashley Rice Books**.
 
+### SEO Content Adjustments  
+
+**Fix: Goodreads profile link**  
+Instead of just a button, we added a sentence with context:  
+*“Discover what readers are sharing on [Goodreads](https://www.goodreads.com/author/show/93018.Ashley_Rice), the world’s largest book review site.”*  
+Why: This explains what Goodreads is, builds credibility, and helps parents/grandparents (buyers) understand it’s a trusted review source. Improves E-E-A-T signals (Experience, Expertise, Authoritativeness, Trust).  
+
+**Fix: Internal linking**  
+Added keyword-rich internal links between pages (e.g., About → Books).  
+Why: Helps readers (and Google) move smoothly between pages, reinforces “Ashley Rice books” as a brand keyword, and distributes ranking authority across the site.  
+ 
+
 ### Homepage SEO Update
 
 Google Search Console showed that most visitors searching for **"ashley rice books"** were landing on the homepage first. To better align with this behavior, we refined the homepage metadata to reinforce the brand and guide users toward the Books page without sounding pushy.
