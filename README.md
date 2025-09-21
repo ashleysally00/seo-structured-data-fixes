@@ -380,6 +380,35 @@ See Ashley Rice’s current titles available wholesale—books, greeting cards, 
 
 This update improves clarity, keeps the wording natural, and still reinforces keywords like **Ashley Rice books** and **wholesale**.
 
+## Penelope’s Corner SEO Update ✨
+
+We created a new page on the site called **Penelope’s Corner**, designed as a reader-first space that highlights Ashley Rice’s **most-quoted and most-reposted poems** — the ones people often search for, share on social media, or post on quote sites.
+
+### Why this matters
+- **SEO boost** → By including the full text of popular poems (e.g., *Friends*, *Women Who Change the World*), the page captures search traffic and helps people find Ashley’s work through Google.  
+- **Reader engagement** → The page is written in Penelope’s voice, making it feel like a personal gift rather than a sales page.  
+- **Good faith / authenticity** → While optimized for SEO, the intent is primarily to serve readers by giving them direct access to the words they love.  
+
+### How poems are presented
+Each featured poem is shown in **two ways**:
+1. **Text version** → ensures accessibility, readability on all devices, and SEO indexing.  
+2. **Image version** → shows the original illustrated card/book pages from Blue Mountain Arts, keeping the charm and authenticity of the original design.  
+
+### Image optimization
+We optimized all images in **Photoshop** before uploading:
+- **Width:** ~1200px (sized for clean display across desktop and mobile).  
+- **Resolution:** 72 dpi (standard for web, prevents oversized files).  
+- **Format:** JPEG (balance of quality and load speed).  
+
+This choice keeps pages visually rich while still loading quickly, which supports both **user experience** and **Core Web Vitals**.  
+
+### Result
+*Penelope’s Corner* is now both **reader-first and search-friendly**:
+- Fans can read and share Ashley Rice’s most-loved poems in one place.  
+- The page reinforces **Ashley Rice poems** as a searchable entity in Google.  
+- Combining text + optimized images balances authenticity, SEO, and performance.
+
+
 ### About Page SEO Update
 
 The About page originally had a short description that mentioned Ashley Rice as an author and illustrator, but it didn’t clearly distinguish her from other people with the same name. It also didn’t emphasize **Ashley Rice Books** as a branded keyword.
@@ -712,7 +741,7 @@ yaml
 
 3. **Schema should match reality**: Since I no longer sell directly through my site, LocalBusiness is incorrect. WebSite schema is the right fit.
 
-4. **Tools help uncover hidden issues**: SEMrush and Google's Rich Results Test revealed problems I couldn't see just by browsing the site.
+4. **Tools help uncover hidden issues**: SEMrush and Google's Rich Results Test revealed proems I couldn't see just by browsing the site.
 
 5. **SEO is iterative**: Each fix leads to the next test. Visibility builds through steady corrections, not one-time changes.
 
