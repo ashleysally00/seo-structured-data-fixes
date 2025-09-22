@@ -169,6 +169,23 @@ To preserve both visual consistency *and* SEO:
 - Adds proper on-page SEO content (H2 titles, H3 bylines, keyword-rich summaries).
 - Improves both visual authority and search authority at the same time.
 
+#### Multilingual Books & Alt Text Updates 🌍
+
+To strengthen SEO and accessibility for translated editions of Ashley Rice’s books, I added:
+
+- **New sections on the Books page** for Portuguese (Brazilian Edition), Spanish, and Chinese titles.  
+- **Consistent formatting** for translations: Original title (English translation).  
+  - Example: O Poder das Garotas (The Power of Girls)  
+- **Alt text for book covers** in different languages for SEO + accessibility:  
+  - Sólo para chicas by Ashley Rice, Spanish edition book cover (Just for Girls)  
+  - El poder de las chicas by Ashley Rice, Spanish edition book cover (The Power of Girls)  
+  - Só para amigas by Ashley Rice, Portuguese (Brazilian edition) book cover (Just for Friends)  
+  - O Poder das Garotas by Ashley Rice, Portuguese (Brazilian edition) book cover (The Power of Girls)  
+
+**Why this matters**  
+- Helps Google index translated titles and associate them with English originals.  
+- Improves accessibility by giving meaningful, consistent descriptions.  
+- Positions translations as first-class works, not “other” or secondary.
 
 ## Addressing Low Word Count (On-Page SEO)
 
