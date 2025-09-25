@@ -170,6 +170,20 @@ To preserve both visual consistency *and* SEO:
 - Adds proper on-page SEO content (H2 titles, H3 bylines, keyword-rich summaries).
 - Improves both visual authority and search authority at the same time.
 
+  ## Update: Dedicated Google Books Page (UX + SEO)
+
+To reduce friction for buyers on the main **Books** page, we created a separate internal page for Google Books titles: [/ashley-rice-google-books](/ashley-rice-google-books).
+
+**Why this matters**  
+- Keeps the **Books** page focused on immediate purchase intent (Amazon/B&N links).  
+- Provides a home for **translated, out-of-print, and library-only titles** without confusing shoppers.  
+- Improves **user experience (UX)** by separating “buy now” vs. “explore more” pathways.  
+- Strengthens SEO by giving translated editions and Google Books listings their own structured page.  
+
+On the Books page we added a short inline note:  
+“Hey! These additional [Ashley Rice titles](/ashley-rice-google-books) are available through the Google Books Library Project.”
+
+
 #### Multilingual Books & Alt Text Updates 🌍
 
 To strengthen SEO and accessibility for translated editions of Ashley Rice’s books, I added:
@@ -675,6 +689,8 @@ This repo includes screenshots of test outcomes for documentation:
 - `rich-test-results.png` – error message example
 - `local-business.png` – failed LocalBusiness validation
 - `semrush-broken-links.png` – SEMrush report
+
+
 
 ## Books Quiz
 
