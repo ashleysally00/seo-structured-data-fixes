@@ -30,6 +30,7 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Books Quiz](#books-quiz) ✨📚
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
+- [Live Site](#live-site)
 
 
 ## SEMrush Integration
@@ -790,5 +791,20 @@ yaml
 - ~~Fix the mobile view — check alignment of covers + captions in one-column layouts.~~
 - Verify with SEMrush or Google crawler that H2/H3 headings inside captions are being read correctly.
 - Look into: compressing book covers to lighter WebP/PNG for better performance (improves Core Web Vitals).
+
+Notes to Self / Next Steps✨
+- Fix broken Pinterest backlinks (301 redirect or remove)
+- Start with writing unique meta descriptions for Home, Books, About, Contact, Wholesale
+- After Search Console verifies domain, check Index Coverage to confirm all 5 main pages are indexed
+- Use Rich Results Test again to confirm schema cleanup (WebSite vs. LocalBusiness)
+- Consider adding 150–300 words of intro text to Books and About pages for SEO
+- Re-run SEMrush once quota resets to confirm errors are resolved
+- Fix the mobile view — check alignment of covers + captions in one-column layouts.
+- Verify with SEMrush or Google crawler that H2/H3 headings inside captions are being read correctly.
+- Look into: compressing book covers to lighter WebP/PNG for better performance (improves Core Web Vitals).
+
+## Live Site
+🌐 [ashleyrice.net](https://www.ashleyrice.net)
+
 
 
