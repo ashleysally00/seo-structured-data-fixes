@@ -39,3 +39,35 @@ Each subpage now outputs a unique `<title>` (e.g., _For an Incredible Kid – �
 - The "Items" tab in Search appearance (`%i — %s`) did not require changes.
 - Per-page SEO titles/descriptions in **Page Settings → SEO** were already customized.
 
+ ### Why Fixing Duplicate Title Tags Matters
+
+Fixing the **19 duplicate title tags** flagged by SEMrush is more than just housekeeping — it’s a foundational SEO improvement that strengthens your site’s visibility and ranking potential.
+
+#### Why Duplicate Title Tags Are a Problem
+
+Think of a title tag as the title of a chapter in a book.  
+If 19 chapters all have the same title, it’s confusing for both readers and search engines.  
+This causes several issues:
+
+- **Keyword Cannibalization:**  
+  When multiple pages share the same title, search engines don’t know which one to prioritize.  
+  As a result, all those pages may rank lower because their relevance is diluted.
+
+- **Diluted Link Equity:**  
+  When other websites link to your pages, that SEO “credit” (link equity) gets spread thin across duplicates.  
+  Unique titles allow all that value to focus on one authoritative page.
+
+- **Lower Click-Through Rate (CTR):**  
+  Distinct, descriptive titles are more appealing in search results.  
+  Duplicate or generic ones look repetitive and discourage clicks — which can signal to Google that your page is less relevant.
+
+#### What This Fix Improves
+
+- **Improved User Experience:**  
+  Visitors now see clear, descriptive titles that help them find exactly what they’re looking for.
+
+- **Better Ranking Potential:**  
+  By giving each page a unique title, your site sends stronger relevance signals to Google, consolidates link authority, and improves overall keyword performance.
+
+Even though this type of fix doesn’t skyrocket rankings overnight, it’s one of the most important long-term SEO foundations for building authority and clarity across your site.
+
