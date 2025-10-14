@@ -30,8 +30,8 @@ Find which Penelope book fits you best — take the fun quiz!
 - [Books Quiz](#books-quiz) ✨📚
 - [Store / Commerce Pages and Schema](#store--commerce-pages-and-schema)
 - [Lessons Learned](#lessons-learned)
+- [Ongoing Updates (as of Oct 2025)](updates.md)
 - [Live Site](#live-site)
-
 
 ## SEMrush Integration
 
