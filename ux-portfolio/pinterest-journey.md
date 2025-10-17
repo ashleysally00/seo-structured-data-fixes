@@ -7,8 +7,10 @@
 ---
 
 ## Objective
-Analyze and improve how readers and pinners discover and engage with creative, empowering content across themed boards (Birthday Poems, Girl Power Art, and Seasonal Designs).  
-The goal was to refine titles, descriptions, and visual hierarchy to increase saves, improve clarity, and strengthen the connection between Pinterest and the author’s main website.
+
+This project focused on improving how readers and pinners discover Ashley Rice’s creative work through Pinterest and her Squarespace website.  
+The goal was to make the visual and written experience feel cohesive—from the first pin interaction to visiting the site—by testing new copy styles, board structures, and visual compositions.  
+It combined UX writing, content strategy, and design iteration to strengthen engagement, accessibility, and cross-platform consistency.
 
 ---
 
