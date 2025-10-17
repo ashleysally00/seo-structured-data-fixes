@@ -24,9 +24,20 @@ The goal was to refine titles, descriptions, and visual hierarchy to increase sa
 ---
 
 ## Outcome
-- Improved discoverability and clarity across boards.  
-- Increased understanding of Pinterest’s creator-side UX and the behavioral patterns of readers vs. pinners.  
-- Insights contributed directly to how website content was structured and described (as seen in *Penelope’s Secret Pages* and the Books page redesign).  
+
+### Pinterest Performance
+- During the first week of testing, several redesigned pins showed strong early performance:
+  - One Halloween pin increased saves by **800%**
+  - A birthday pin rose by **500%**
+  - Another post gained **107%** more impressions compared to its previous version  
+- These early metrics highlighted how clearer wording, improved composition, and more consistent tone could directly influence engagement.  
+- Future iterations will track whether these gains hold over time and across additional boards.
+
+### Website Impact
+- Following the Pinterest content and SEO updates, Squarespace analytics showed:
+  - **311 unique visitors**, a **+90% month-over-month increase**
+  - **450 total visits**, a **+40% month-over-month increase**
+- These metrics indicate that clearer Pinterest-to-website pathways and more consistent messaging helped attract new readers and returning visitors.
 
 ---
 
