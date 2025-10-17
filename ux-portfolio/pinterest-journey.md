@@ -13,13 +13,17 @@ The goal was to refine titles, descriptions, and visual hierarchy to increase sa
 ---
 
 ## Process and Contributions
+
 - **Discovery:** Studied performance analytics to identify which pins (Birthday vs. Halloween vs. Quote boards) drove engagement and profile visits.  
 - **Content Testing:** Iteratively tested word choices, hashtags, and image-text balance.  
   - Compared “Happy Birthday Forever” vs. “Birthday Poems That Hit Different.”  
   - Observed that conversational, emotionally clear titles performed better than poetic phrasing.  
 - **Design Refinement:** Adjusted font weight, background gray levels, and image composition for legibility and tone.  
+- **Board Strategy:** Created dedicated Pinterest boards for specific themes like *Birthday Poems* and *Halloween Art*.  
+  - The Halloween board mixed my own illustrations and poems with curated pins from other creators to build balance, relevance, and cross-engagement.  
+  - This approach encouraged discovery through related visuals while positioning original work alongside trending seasonal art.  
 - **UX Journey Mapping:** Documented the flow from discovery → pin click → site visit → user action (e.g., reading, saving, or following).  
-- **Accessibility & SEO:** Added alt text, simplified anchor text, and unified color treatments across boards for visual consistency.  
+- **Accessibility & SEO:** Added alt text, simplified anchor text, and unified color treatments across boards for visual consistency.
 
 ---
 
