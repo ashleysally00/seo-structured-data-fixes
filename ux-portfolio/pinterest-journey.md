@@ -14,7 +14,7 @@ It combined UX writing, content strategy, and design iteration to strengthen eng
 
 ---
 
-## Process and Contributions
+## Process 
 
 - **Discovery:** Reviewed Pinterest analytics to identify which pins and boards were driving engagement, saves, and profile visits. Observed early metrics showing up to 800%+ save increases on select pins.  
 - **Content Testing:** Compared poetic, emotionally resonant titles with plain/keyword-first titles.  
