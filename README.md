@@ -1,7 +1,7 @@
 # Website SEO & Schema Debugging
 
 This repo documents my process of fixing SEO and structured data issues on my Squarespace site. I'm using SEMrush and Google's Rich Results Test to identify problems, apply fixes, and track improvements.  
-I’m also automating part of my workflow using Python. To do this, I created a searchable database of greeting card images by extracting text with OCR and saving it to CSV. See the companion project [Greeting Card Database Automation](https://github.com/ashleysally00/greeting-card-database-automation/tree/main).
+I’m also automating part of my workflow using Python. I created a searchable database of greeting card images by extracting text with OCR and saving it to CSV. See the companion project [Greeting Card Database Automation](https://github.com/ashleysally00/greeting-card-database-automation/tree/main).
 
 
 ## 📚 Books Quiz  
