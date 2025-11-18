@@ -1,6 +1,6 @@
 # Website SEO & Schema Debugging
 
-**Short version** → [Back to main case study](https://github.com/ashleysally00/seo-structured-data-fixes#website-seo--schema-fixes)
+**Short version** → [case study](https://github.com/ashleysally00/seo-structured-data-fixes#website-seo--schema-fixes)
 
 This is the full technical write-up. The short summary is in the main README (link above).
 
