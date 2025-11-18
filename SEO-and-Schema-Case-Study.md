@@ -19,6 +19,6 @@ Broken redirects, duplicate titles, wrong schema, low word count, and accessibil
 89 % of SEMrush errors gone, 0 errors in Rich Results Test, faster indexing, cleaner experience.
 
 Live site → [ashleyrice.net](https://ashleyrice.net)  
-Full technical write-up → [seo-structured-data-fixes.md](seo-structured-data-fixes.md)
+Full technical write-up → [seo-structured-data-fixes.md](https://github.com/ashleysally00/seo-structured-data-fixes)
 
 ---
