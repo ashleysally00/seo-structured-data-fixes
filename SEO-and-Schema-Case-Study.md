@@ -1,5 +1,5 @@
 ## Website SEO & Schema Debugging  
-**Fixed 89 % of technical SEO errors + cleaned structured data**
+**Fixed 89 % of SEMrush technical SEO errors (including all structured-data issues)**
 
 **Role** UX Content Designer · SEO Specialist  
 **Platform** Squarespace 7.1  
