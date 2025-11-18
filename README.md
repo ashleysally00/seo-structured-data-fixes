@@ -1,5 +1,11 @@
 # Website SEO & Schema Debugging
 
+**Short version** → [Back to main case study](https://github.com/ashleysally00/seo-structured-data-fixes#website-seo--schema-fixes)
+
+This is the full technical write-up. The short summary is in the main README (link above).
+
+---
+
 This repo documents my process of fixing SEO and structured data issues on my Squarespace site. I'm using SEMrush and Google's Rich Results Test to identify problems, apply fixes, and track improvements.  
 For reasons of efficienfy, I’m automating part of my workflow using Python. I created a searchable database of greeting card images by extracting text with OCR and saving it to CSV. See the companion project [Greeting Card Database Automation](https://github.com/ashleysally00/greeting-card-database-automation/tree/main).
 
