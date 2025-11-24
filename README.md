@@ -402,7 +402,7 @@ Ashley Rice Books – Inspiring Poems & Girl Power Reads for Tweens
 Discover Ashley Rice books for girls and tweens—filled with poems, doodles, and quotes that inspire confidence, friendship, and girl power. (160 chars)  
 
 This update directly targets user search behavior, makes the Google snippet more engaging, and reinforces the Books page as the main destination for the query *"ashley rice books."*
-oks."
+
 
 ### Wholesale Page SEO Update
 
