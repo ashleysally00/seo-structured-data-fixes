@@ -1,10 +1,12 @@
-# Ongoing Updates (as of Oct 14, 2025)
+# Ongoing Updates 
+### Last updated: Oct 14, 2025
 
-> Summary of updates, fixes, and improvements made to the SEO & Schema project.
+> Summary of ongoing fixes and improvements
 
 This file acts as a **changelog** for small, ongoing improvements and SEO/debugging fixes made after the main documentation was completed.
 
 It's meant for quick notes — not full write-ups — so each entry only includes:
+
 - **Date**
 - **What changed**
 - **Why it was done**
@@ -14,9 +16,11 @@ This keeps the main README organized while still tracking all progress over time
 
 ---
 
-## 2025-10-14 — Fix: Duplicate Title Tags (Squarespace)
+### 2025-10-14 — Fix: Duplicate Title Tags (Squarespace)
+
 
 **Why**  
+
 SEMrush reported **19 duplicate title tags** on book subpages (e.g., `/for-an-incredible-kid`, `/girls-rule`, etc.).
 
 **Root cause**  
@@ -25,6 +29,7 @@ Squarespace's global page-title format for all pages was overriding per-page SEO
 **What we changed (1 setting)**  
 Squarespace → **Settings → SEO / AIO → Search appearance → _Pages_**  
 In **SEO title format**, replaced the global text with:
+
 ```
 %p
 ```
@@ -41,7 +46,7 @@ Each subpage now outputs a unique `<title>` (e.g., _For an Incredible Kid – �
 - The "Items" tab in Search appearance (`%i — %s`) did not require changes.
 - Per-page SEO titles/descriptions in **Page Settings → SEO** were already customized.
 
- ### Why Fixing Duplicate Title Tags Matters
+### Why Fixing Duplicate Title Tags Matters
 
 Fixing the **19 duplicate title tags** flagged by SEMrush is more than just housekeeping — it’s a foundational SEO improvement that strengthens your site’s visibility and ranking potential.
 
