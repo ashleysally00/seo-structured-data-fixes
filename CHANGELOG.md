@@ -1,5 +1,7 @@
 # Ongoing Updates (as of Oct 14, 2025)
 
+> Summary of updates, fixes, and improvements made to the SEO & Schema project.
+
 This file acts as a **changelog** for small, ongoing improvements and SEO/debugging fixes made after the main documentation was completed.
 
 It's meant for quick notes — not full write-ups — so each entry only includes:
