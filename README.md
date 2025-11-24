@@ -784,7 +784,7 @@ yaml
 
 3. **Schema should match reality**: Since I no longer sell directly through my site, LocalBusiness is incorrect. WebSite schema is the right fit.
 
-4. **Tools help uncover hidden issues**: SEMrush and Google's Rich Results Test revealed proems I couldn't see just by browsing the site.
+4. **Tools help uncover hidden issues**: SEMrush and Google's Rich Results Test revealed problems I couldn't see just by browsing the site.
 
 5. **SEO is iterative**: Each fix leads to the next test. Visibility builds through steady corrections, not one-time changes.
 
