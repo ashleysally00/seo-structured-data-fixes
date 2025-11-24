@@ -695,10 +695,9 @@ Replace the incorrect LocalBusiness schema with WebSite schema:
 ## Snapshot References
 
 This repo includes screenshots of test outcomes for documentation:
-- `rich-test-results.png` – error message example
-- `local-business.png` – failed LocalBusiness validation
-- `semrush-broken-links.png` – SEMrush report
-
+- `images/rich-test-results.png` – error message example
+- `images/local-business.png` – failed LocalBusiness validation
+- `images/semrush-broken-links.png` – SEMrush report
 
 
 ## Books Quiz
